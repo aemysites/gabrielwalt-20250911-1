@@ -241,7 +241,8 @@
           "uuid": "e286ec6c-03-d864c70d25f830989e674715c00eda2b45583a5c",
           "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]"
         }
-      ]
+      ],
+      "key": "unknown2"
     },
     {
       "name": "unknown",
@@ -265,7 +266,8 @@
           "uuid": "e286ec6c-09-38376c4c9efcfc2dede1b1a8abf2356cc08c536c",
           "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[3]"
         }
-      ]
+      ],
+      "key": "unknown3"
     },
     {
       "name": "Cards",
@@ -360,7 +362,8 @@
           "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
           "section": "section-1"
         }
-      ]
+      ],
+      "key": "unknown5"
     },
     {
       "name": "Columns",
@@ -646,7 +649,8 @@
           "uuid": "e286ec6c-11-7705d0e53ffa8e73734a519c41dc4d276592a531",
           "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[7]"
         }
-      ]
+      ],
+      "key": "unknown12"
     },
     {
       "name": "Hero",
@@ -706,7 +710,8 @@
           "uuid": "707fd4d2-07-486f08646673416cff497260cad0495b488a47cc",
           "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]"
         }
-      ]
+      ],
+      "key": "unknown15"
     },
     {
       "name": "Carousel",
@@ -925,7 +930,8 @@
           "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[2]",
           "section": "section-7"
         }
-      ]
+      ],
+      "key": "unknown23"
     },
     {
       "name": "Columns",
