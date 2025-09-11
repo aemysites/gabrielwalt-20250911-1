@@ -1,0 +1,1842 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+          "uuid": "7c8b8f2a-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+          "uuid": "f9e43a28-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        }
+      ],
+      "styles": {
+        "height": 261,
+        "background": "rgb(24, 30, 32) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-09-d281e593b5936ebff569129ffd75a8bfe60377c3",
+          "xpath": "/html[1]/body[1]/div[9]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-16-d281e593b5936ebff569129ffd75a8bfe60377c3",
+          "xpath": "/html[1]/body[1]/div[9]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-17-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-17-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+          "uuid": "7c8b8f2a-12-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-12-d281e593b5936ebff569129ffd75a8bfe60377c3",
+          "xpath": "/html[1]/body[1]/div[9]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-27-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-21-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-21-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-15-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-20-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+          "uuid": "f9e43a28-10-d281e593b5936ebff569129ffd75a8bfe60377c3",
+          "xpath": "/html[1]/body[1]/div[9]"
+        }
+      ],
+      "styles": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Cards",
+      "cluster": 1,
+      "source": "Cards",
+      "target": "Cards (cards1)",
+      "key": "cards1",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+          "uuid": "7c8b8f2a-07-f03ce605112d1341e06bc204304af5991b991417",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-14-01b59dfffda05a7474332cd6aaed48d5637f0a8c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[3]/div[1]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-20-683a0d8c6dbcad8f734aea0349c48df7cce72986",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[3]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 2,
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-03-d864c70d25f830989e674715c00eda2b45583a5c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-03-d864c70d25f830989e674715c00eda2b45583a5c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+          "uuid": "7c8b8f2a-03-d864c70d25f830989e674715c00eda2b45583a5c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-03-d864c70d25f830989e674715c00eda2b45583a5c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-03-d864c70d25f830989e674715c00eda2b45583a5c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-03-d864c70d25f830989e674715c00eda2b45583a5c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-03-d864c70d25f830989e674715c00eda2b45583a5c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 3,
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-09-38376c4c9efcfc2dede1b1a8abf2356cc08c536c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[3]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-09-38376c4c9efcfc2dede1b1a8abf2356cc08c536c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[3]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-09-38376c4c9efcfc2dede1b1a8abf2356cc08c536c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[3]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 4,
+      "source": "Cards",
+      "target": "Cards (cards4)",
+      "key": "cards4",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-10-3853efe86db4389f35b9b0ab0118b628c42dc606",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-14-f03ce605112d1341e06bc204304af5991b991417",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-14-f03ce605112d1341e06bc204304af5991b991417",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-13-f03ce605112d1341e06bc204304af5991b991417",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 5,
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-01-4a92fbc8b0a99f90d4f6b2d9c7ed9b2f57e17ac5",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-01-4a92fbc8b0a99f90d4f6b2d9c7ed9b2f57e17ac5",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+          "uuid": "7c8b8f2a-01-4a92fbc8b0a99f90d4f6b2d9c7ed9b2f57e17ac5",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-01-4a92fbc8b0a99f90d4f6b2d9c7ed9b2f57e17ac5",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-01-4a92fbc8b0a99f90d4f6b2d9c7ed9b2f57e17ac5",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-01-4a92fbc8b0a99f90d4f6b2d9c7ed9b2f57e17ac5",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-01-4a92fbc8b0a99f90d4f6b2d9c7ed9b2f57e17ac5",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-01-4a92fbc8b0a99f90d4f6b2d9c7ed9b2f57e17ac5",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 6,
+      "source": "Columns",
+      "target": "Columns (columns6)",
+      "key": "columns6",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-05-73f7861d5c77cda0fac0651fcc8eb8100fce7d0d",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-05-73f7861d5c77cda0fac0651fcc8eb8100fce7d0d",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-05-73f7861d5c77cda0fac0651fcc8eb8100fce7d0d",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 7,
+      "source": "Hero",
+      "target": "Hero (hero7)",
+      "key": "hero7",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-05-fed4f91ee237832bfb7265687adf1fa874bdfe39",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-05-fed4f91ee237832bfb7265687adf1fa874bdfe39",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-07-fed4f91ee237832bfb7265687adf1fa874bdfe39",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-07-fed4f91ee237832bfb7265687adf1fa874bdfe39",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-07-fed4f91ee237832bfb7265687adf1fa874bdfe39",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 8,
+      "source": "Columns",
+      "target": "Columns (columns8)",
+      "key": "columns8",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-17-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-17-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-27-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-21-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-21-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-15-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-20-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 9,
+      "source": "Columns",
+      "target": "Columns (columns9)",
+      "key": "columns9",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-07-07d36c33b94376f92f2db63104ac95b41f8c71b7",
+          "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-14-07d36c33b94376f92f2db63104ac95b41f8c71b7",
+          "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-15-7c257b2f9a9aacb08f731e06a1351bc598331199",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-15-7c257b2f9a9aacb08f731e06a1351bc598331199",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+          "uuid": "7c8b8f2a-10-7c257b2f9a9aacb08f731e06a1351bc598331199",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-10-07d36c33b94376f92f2db63104ac95b41f8c71b7",
+          "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-25-8cd63309858cb81e20a0bf40245af1b2f7b1bbde",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-19-7c257b2f9a9aacb08f731e06a1351bc598331199",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-19-7c257b2f9a9aacb08f731e06a1351bc598331199",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-13-3ed505b4d126ab245fee8a4a85a822e7e87bf678",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-18-7c257b2f9a9aacb08f731e06a1351bc598331199",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[4]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+          "uuid": "f9e43a28-08-07d36c33b94376f92f2db63104ac95b41f8c71b7",
+          "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[4]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 10,
+      "source": "Cards",
+      "target": "Cards (cards10)",
+      "key": "cards10",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-08-6910f42da5880603513b7eb7284986523327e7e1",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[5]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 11,
+      "source": "Header",
+      "target": "Header (header11)",
+      "key": "header11",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+          "uuid": "f9e43a28-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 12,
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-12-7705d0e53ffa8e73734a519c41dc4d276592a531",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[7]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-12-7705d0e53ffa8e73734a519c41dc4d276592a531",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[7]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-11-7705d0e53ffa8e73734a519c41dc4d276592a531",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[7]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 13,
+      "source": "Hero",
+      "target": "Hero (hero13)",
+      "key": "hero13",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-03-77f6a7e8c8716c9daabb49d3c8b509d80aec90b4",
+          "xpath": "/html[1]/body[1]/div[3]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-03-77f6a7e8c8716c9daabb49d3c8b509d80aec90b4",
+          "xpath": "/html[1]/body[1]/div[3]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-03-77f6a7e8c8716c9daabb49d3c8b509d80aec90b4",
+          "xpath": "/html[1]/body[1]/div[3]/div[2]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+          "uuid": "f9e43a28-03-77f6a7e8c8716c9daabb49d3c8b509d80aec90b4",
+          "xpath": "/html[1]/body[1]/div[3]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 14,
+      "source": "Columns",
+      "target": "Columns (columns14)",
+      "key": "columns14",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-05-770a7945ab0f221b28f7d84a6edc37f971b7ef11",
+          "xpath": "/html[1]/body[1]/div[3]/div[7]"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 15,
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-07-486f08646673416cff497260cad0495b488a47cc",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 16,
+      "source": "Carousel",
+      "target": "Carousel (carousel16)",
+      "key": "carousel16",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+          "uuid": "f9e43a28-06-a7b94463f42fe74f433d01f94596405536cd2e94",
+          "xpath": "/html[1]/body[1]/div[3]/div[8]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 17,
+      "source": "Cards",
+      "target": "Cards (cards17)",
+      "key": "cards17",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-10-6d2939bfc2c06ace466f3ba4db1d9635678eca67",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[6]/div[1]/div[1]/div[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 18,
+      "source": "Columns",
+      "target": "Columns (columns18)",
+      "key": "columns18",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-09-d281e593b5936ebff569129ffd75a8bfe60377c3",
+          "xpath": "/html[1]/body[1]/div[9]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-16-d281e593b5936ebff569129ffd75a8bfe60377c3",
+          "xpath": "/html[1]/body[1]/div[9]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-12-d281e593b5936ebff569129ffd75a8bfe60377c3",
+          "xpath": "/html[1]/body[1]/div[9]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+          "uuid": "f9e43a28-10-d281e593b5936ebff569129ffd75a8bfe60377c3",
+          "xpath": "/html[1]/body[1]/div[9]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 19,
+      "source": "Cards",
+      "target": "Cards (cards19)",
+      "key": "cards19",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-07-a7b94463f42fe74f433d01f94596405536cd2e94",
+          "xpath": "/html[1]/body[1]/div[3]/div[8]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 20,
+      "source": "Cards",
+      "target": "Cards (cards20)",
+      "key": "cards20",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-12-e86a9a4016a3c743513ae01ecc6be6ff0cd53c63",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[4]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 21,
+      "source": "Carousel",
+      "target": "Carousel (carousel21)",
+      "key": "carousel21",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-11-4e4b08649b918628da7df11cd9025fc8662194cb",
+          "xpath": "/html[1]/body[1]/div[3]/div[14]/div[1]/div[2]",
+          "section": "section-5"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 22,
+      "source": "Columns",
+      "target": "Columns (columns22)",
+      "key": "columns22",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-06-d11608a69e43ea5ad639acfa8659d24f569a8ad4",
+          "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-13-d11608a69e43ea5ad639acfa8659d24f569a8ad4",
+          "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-14-99faaa450a0485b53c1e9fe4e9b2a74897df1093",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-14-99faaa450a0485b53c1e9fe4e9b2a74897df1093",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+          "uuid": "7c8b8f2a-09-99faaa450a0485b53c1e9fe4e9b2a74897df1093",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-09-d11608a69e43ea5ad639acfa8659d24f569a8ad4",
+          "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-24-c5e5bab0e7612ef95b2411b9805de41a801a321b",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+          "uuid": "ce53f343-18-99faaa450a0485b53c1e9fe4e9b2a74897df1093",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+          "uuid": "d1d81c06-18-99faaa450a0485b53c1e9fe4e9b2a74897df1093",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-12-676fd6adae6a6e3628abce2d41b8a056a1cb4530",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+          "uuid": "e286ec6c-17-99faaa450a0485b53c1e9fe4e9b2a74897df1093",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+          "uuid": "f9e43a28-07-d11608a69e43ea5ad639acfa8659d24f569a8ad4",
+          "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 23,
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-18-8abd8b630104503fdf19833bb8b2f544e6dc3c7b",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[2]",
+          "section": "section-7"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 24,
+      "source": "Columns",
+      "target": "Columns (columns24)",
+      "key": "columns24",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-04-7d779448a0e1c357dbff7741d93ab4b2edf38294",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 25,
+      "source": "Columns",
+      "target": "Columns (columns25)",
+      "key": "columns25",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-08-33e4dd5d5b9930d400adb86964683c59c1f54e14",
+          "xpath": "/html[1]/body[1]/div[3]/div[9]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 26,
+      "source": "Cards",
+      "target": "Cards (cards26)",
+      "key": "cards26",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-10-d541e7fe876cebaf872d70ec0b0d456bf5d31084",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+          "uuid": "707fd4d2-10-d541e7fe876cebaf872d70ec0b0d456bf5d31084",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Embed (social)",
+      "cluster": 27,
+      "source": "Embed",
+      "target": "Embed (embedSocial27)",
+      "key": "embedSocial27",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+          "uuid": "6210ba71-07-486f08646673416cff497260cad0495b488a47cc",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 28,
+      "source": "Columns",
+      "target": "Columns (columns28)",
+      "key": "columns28",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+          "uuid": "4de2d5b7-04-c68b7292f2c5e6d17b91c276417074f7c62d6f94",
+          "xpath": "/html[1]/body[1]/div[3]/div[5]/div[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 29,
+      "source": "Cards",
+      "target": "Cards (cards29)",
+      "key": "cards29",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+          "uuid": "0d27e29d-04-1bf5c5ece62fb543cac8f255f0cee809fdb2dffa",
+          "xpath": "/html[1]/body[1]/div[3]/div[5]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 30,
+      "source": "Cards",
+      "target": "Cards (cards30)",
+      "key": "cards30",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-08-efaff9ae0665061b78933808a7cdfae371bb599b",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 31,
+      "source": "Cards",
+      "target": "Cards (cards31)",
+      "key": "cards31",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-06-4f35152dccee7abb978c1d3634a548dddb9c04ef",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 32,
+      "source": "Cards",
+      "target": "Cards (cards32)",
+      "key": "cards32",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+          "uuid": "b3443485-05-f1ab168b3c6e88839b2ba69f1404ad633a422579",
+          "xpath": "/html[1]/body[1]/div[3]/div[6]/div[2]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 33,
+      "source": "Hero",
+      "target": "Hero (hero33)",
+      "key": "hero33",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-03-2ee0777a34c774c2e1d0900d224e8af046be3d18",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 34,
+      "source": "Columns",
+      "target": "Columns (columns34)",
+      "key": "columns34",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+          "uuid": "7c8b8f2a-12-b336659d6a58b751a90a6f511c6b5bdd1f7d3464",
+          "xpath": "/html[1]/body[1]/div[4]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 35,
+      "source": "Columns",
+      "target": "Columns (columns35)",
+      "key": "columns35",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+          "uuid": "d568a32d-06-ebbd8df06cddf59b2e2c01059e34ff318f2e0637",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[3]"
+        }
+      ]
+    },
+    {
+      "name": "Cards (no images)",
+      "cluster": 36,
+      "source": "Cards",
+      "target": "Cards (cardsNoImages36)",
+      "key": "cardsNoImages36",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-16-e378999c3921b92d6bb0df896ae0ce8c94b6db3c",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 37,
+      "source": "Columns",
+      "target": "Columns (columns37)",
+      "key": "columns37",
+      "instances": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+          "uuid": "c0207aae-23-4a9dfcdf004c6be17171c4e2f8796fe697528779",
+          "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[4]/div[1]/div[2]"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://www.dws.com/en-ch/service/",
+      "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+      "uuid": "0d27e29d-01-6419c5482dba87d55497e10067ddb965e78fe885",
+      "xpath": "/html[1]/body[1]/div[2]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/service/",
+      "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+      "uuid": "0d27e29d-02-517a94db4be9e28b45ddc57a88330ab3a851dd0d",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/service/",
+      "urlHash": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba",
+      "uuid": "0d27e29d-08-f7e5a357a2d1c893e13f91c2a93ba2c7d3e3dd0b",
+      "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[5]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-01-6419c5482dba87d55497e10067ddb965e78fe885",
+      "xpath": "/html[1]/body[1]/div[2]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-02-517a94db4be9e28b45ddc57a88330ab3a851dd0d",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-05-b962d6ef2470fe44b986d1837e4a800ab3292eb3",
+      "xpath": "/html[1]/body[1]/div[3]/div[5]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-06-4814a6424350f06743273cd3371621524c58267f",
+      "xpath": "/html[1]/body[1]/div[3]/div[6]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-08-779229f7b8b5eee1cb30434b2fe9b0bdb5871e51",
+      "xpath": "/html[1]/body[1]/div[3]/div[10]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-09-52ad4b945e8bf140ab3e5303d53819304c732e36",
+      "xpath": "/html[1]/body[1]/div[3]/div[12]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-10-b2990f52cbff47b35b4b3baf7cd45cd8a5f0bebf",
+      "xpath": "/html[1]/body[1]/div[3]/div[14]/div[1]/div[1]",
+      "section": "section-4"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-12-756128cdb96433243935119619f5ca753381c1e7",
+      "xpath": "/html[1]/body[1]/div[3]/div[20]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "urlHash": "4de2d5b7730517692e0674c6ba7ce590c79d0920",
+      "uuid": "4de2d5b7-15-f7e5a357a2d1c893e13f91c2a93ba2c7d3e3dd0b",
+      "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[5]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-00-6e70765a003047818ea5700b557b8d01b43078df",
+      "xpath": "/html[1]/body[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-02-494bdb6e4bda012740ec09a76b6818e9245fcfc0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-04-7d779448a0e1c357dbff7741d93ab4b2edf38294",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-06-d0913e92066630b9d95bed8fac6b7411bfe9a65f",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-08-9fd3ac4f11ad0d9a4654f2330b116932b0d09953",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-09-46d847df4fb1b3d5789eb6e9281d457f2ac86705",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-11-3d1ccfa14c6c9364bcf659aecaf32923adb39979",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-12-1a9d3b2cf8507ca200ab6c115368c71b3bca1ba3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-13-7b7b0f81b43607b00c73003c5c82447af2215be3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "urlHash": "6210ba716c41172580a627386d24c717d4866c79",
+      "uuid": "6210ba71-16-2fa616364edbdbfb8407c25b2d75c168ce6e23c0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-00-6e70765a003047818ea5700b557b8d01b43078df",
+      "xpath": "/html[1]/body[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-02-494bdb6e4bda012740ec09a76b6818e9245fcfc0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-04-7d779448a0e1c357dbff7741d93ab4b2edf38294",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-06-d0913e92066630b9d95bed8fac6b7411bfe9a65f",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-08-9fd3ac4f11ad0d9a4654f2330b116932b0d09953",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-09-46d847df4fb1b3d5789eb6e9281d457f2ac86705",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-11-3d1ccfa14c6c9364bcf659aecaf32923adb39979",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-12-1a9d3b2cf8507ca200ab6c115368c71b3bca1ba3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-13-7b7b0f81b43607b00c73003c5c82447af2215be3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "urlHash": "707fd4d22f62aab1b88961aa60782c3e9090d64e",
+      "uuid": "707fd4d2-16-2fa616364edbdbfb8407c25b2d75c168ce6e23c0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+      "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+      "uuid": "7c8b8f2a-00-6e70765a003047818ea5700b557b8d01b43078df",
+      "xpath": "/html[1]/body[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+      "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+      "uuid": "7c8b8f2a-02-494bdb6e4bda012740ec09a76b6818e9245fcfc0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+      "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+      "uuid": "7c8b8f2a-04-2e8fcdb41dd14046de159b35e6a468f673612818",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+      "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+      "uuid": "7c8b8f2a-05-d0913e92066630b9d95bed8fac6b7411bfe9a65f",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+      "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+      "uuid": "7c8b8f2a-06-5b2bde5eb319dc60b55535006a146196630eb02c",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+      "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+      "uuid": "7c8b8f2a-08-1a9d3b2cf8507ca200ab6c115368c71b3bca1ba3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+      "urlHash": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5",
+      "uuid": "7c8b8f2a-11-2fa616364edbdbfb8407c25b2d75c168ce6e23c0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/",
+      "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+      "uuid": "b3443485-01-6419c5482dba87d55497e10067ddb965e78fe885",
+      "xpath": "/html[1]/body[1]/div[2]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/",
+      "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+      "uuid": "b3443485-02-517a94db4be9e28b45ddc57a88330ab3a851dd0d",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/",
+      "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+      "uuid": "b3443485-04-e66b06d07ff8843e2a79ed901931a6c8817e9cf1",
+      "xpath": "/html[1]/body[1]/div[3]/div[6]/header[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/",
+      "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+      "uuid": "b3443485-06-01a02e79ff0c4de714d0ea1458365374f7833928",
+      "xpath": "/html[1]/body[1]/div[3]/div[6]/div[2]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/",
+      "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+      "uuid": "b3443485-07-03f9ec8382b8d3c069c5af110e57826768316736",
+      "xpath": "/html[1]/body[1]/div[3]/div[9]/header[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/",
+      "urlHash": "b344348513c644180f2e559c46cd987075d96e51",
+      "uuid": "b3443485-11-f7e5a357a2d1c893e13f91c2a93ba2c7d3e3dd0b",
+      "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[5]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-00-6e70765a003047818ea5700b557b8d01b43078df",
+      "xpath": "/html[1]/body[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-02-494bdb6e4bda012740ec09a76b6818e9245fcfc0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-04-d5d429881edb6d23afc23130048c455f59897517",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-05-f74c2e713103ca41b801ae36b9830a240c4805ed",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-07-d7f83e76931cb4ccd7cba2bea45041e1d3b462f0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-09-7cf823c5aaa960dd2935ea5a4466d3a6b87727ad",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-11-6bee5e7641e56dce1f47bac762e9a4f8b471c0c2",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-13-9850ca68e127558dd868eb8315cf6e5a0d53cd65",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-15-0358091fcc80c9242f73ab3d202a46230aaeb2a6",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-17-eb2dc77d1377ef34b9fc5b5475e3c79d5d9da0ef",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-19-028c2f47abbd8cc413a4f23bbd1ca22766c13617",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[3]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-21-690f9c8b5484ec3afed67fe6328a11e90bbedf70",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[3]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-22-8d34522cbeb95749c31b6eeb99f1aef8c51c6820",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[3]/div[4]/div[1]/div[1]/div[4]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "urlHash": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f",
+      "uuid": "c0207aae-26-6d7718c90cf4e21a7c5544c1f558d34bebf2d974",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/footer[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-00-6e70765a003047818ea5700b557b8d01b43078df",
+      "xpath": "/html[1]/body[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-02-494bdb6e4bda012740ec09a76b6818e9245fcfc0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-04-bbdf304f43d8cf4ea59db0074ddfe6cfd04a811d",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-06-ad8ec5714842cdecdece4432b4215febef870407",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-08-f8ca1d06615167464247b0f18f7dcdb26a056cfc",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-10-86b04e71dadeb2dadf1224de70f86377df1ca51e",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-11-e03b6f949b0c4a1a88063ca8d9f2fb3ee6ef2b13",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-13-5b2bde5eb319dc60b55535006a146196630eb02c",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-15-b744d877f4a2b40c68168b2e7738d7eda0d70123",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-16-1a9d3b2cf8507ca200ab6c115368c71b3bca1ba3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-17-7b7b0f81b43607b00c73003c5c82447af2215be3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "urlHash": "ce53f34328575d43e6f85bb76f21038b87310cce",
+      "uuid": "ce53f343-20-2fa616364edbdbfb8407c25b2d75c168ce6e23c0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-00-6e70765a003047818ea5700b557b8d01b43078df",
+      "xpath": "/html[1]/body[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-02-494bdb6e4bda012740ec09a76b6818e9245fcfc0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-04-bbdf304f43d8cf4ea59db0074ddfe6cfd04a811d",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-06-ad8ec5714842cdecdece4432b4215febef870407",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-08-f8ca1d06615167464247b0f18f7dcdb26a056cfc",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-10-86b04e71dadeb2dadf1224de70f86377df1ca51e",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-11-e03b6f949b0c4a1a88063ca8d9f2fb3ee6ef2b13",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-13-5b2bde5eb319dc60b55535006a146196630eb02c",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-15-b744d877f4a2b40c68168b2e7738d7eda0d70123",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-16-1a9d3b2cf8507ca200ab6c115368c71b3bca1ba3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-17-7b7b0f81b43607b00c73003c5c82447af2215be3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "urlHash": "d1d81c0652bdf709b21a81c5f1d369ebe8376599",
+      "uuid": "d1d81c06-20-2fa616364edbdbfb8407c25b2d75c168ce6e23c0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+      "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+      "uuid": "d568a32d-00-6e70765a003047818ea5700b557b8d01b43078df",
+      "xpath": "/html[1]/body[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+      "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+      "uuid": "d568a32d-02-494bdb6e4bda012740ec09a76b6818e9245fcfc0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+      "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+      "uuid": "d568a32d-05-fed4f91ee237832bfb7265687adf1fa874bdfe39",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+      "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+      "uuid": "d568a32d-07-a822dd7d409d509636a6a577273cc7334ce990f5",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[5]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+      "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+      "uuid": "d568a32d-09-0d275898330176a679091020a8c77e2d9348b19e",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+      "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+      "uuid": "d568a32d-11-d0913e92066630b9d95bed8fac6b7411bfe9a65f",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+      "urlHash": "d568a32d655156061d8edf5f2ba9daddd6a19760",
+      "uuid": "d568a32d-14-38830f46950a07f2e1f2c44790020b8c3725a0fb",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/footer[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-00-6e70765a003047818ea5700b557b8d01b43078df",
+      "xpath": "/html[1]/body[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-02-494bdb6e4bda012740ec09a76b6818e9245fcfc0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-04-bbdf304f43d8cf4ea59db0074ddfe6cfd04a811d",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-06-ad8ec5714842cdecdece4432b4215febef870407",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-08-f8ca1d06615167464247b0f18f7dcdb26a056cfc",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-10-e03b6f949b0c4a1a88063ca8d9f2fb3ee6ef2b13",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-12-5b2bde5eb319dc60b55535006a146196630eb02c",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-14-b744d877f4a2b40c68168b2e7738d7eda0d70123",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-15-1a9d3b2cf8507ca200ab6c115368c71b3bca1ba3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-16-7b7b0f81b43607b00c73003c5c82447af2215be3",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/div[2]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "urlHash": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758",
+      "uuid": "e286ec6c-19-2fa616364edbdbfb8407c25b2d75c168ce6e23c0",
+      "xpath": "/html[1]/body[1]/div[2]/div[1]/div[6]/footer[1]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/solutions/",
+      "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+      "uuid": "f9e43a28-01-6419c5482dba87d55497e10067ddb965e78fe885",
+      "xpath": "/html[1]/body[1]/div[2]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/solutions/",
+      "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+      "uuid": "f9e43a28-02-517a94db4be9e28b45ddc57a88330ab3a851dd0d",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/solutions/",
+      "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+      "uuid": "f9e43a28-04-1bf5c5ece62fb543cac8f255f0cee809fdb2dffa",
+      "xpath": "/html[1]/body[1]/div[3]/div[5]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/solutions/",
+      "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+      "uuid": "f9e43a28-05-4814a6424350f06743273cd3371621524c58267f",
+      "xpath": "/html[1]/body[1]/div[3]/div[6]"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/solutions/",
+      "urlHash": "f9e43a28504f463170f0057a71bbdd462f7975a4",
+      "uuid": "f9e43a28-09-f7e5a357a2d1c893e13f91c2a93ba2c7d3e3dd0b",
+      "xpath": "/html[1]/body[1]/div[4]/div[1]/footer[1]/div[5]",
+      "section": "section-2"
+    }
+  ],
+  "sections": [
+    {
+      "name": "section-1",
+      "background": "rgb(24, 30, 32) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 24
+    },
+    {
+      "name": "section-2",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 12
+    },
+    {
+      "name": "section-3",
+      "background": "rgb(246, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 16
+    },
+    {
+      "name": "section-4",
+      "background": "rgba(82, 82, 89, 0.9) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 1
+    },
+    {
+      "name": "section-5",
+      "background": "rgba(43, 45, 44, 0.9) none repeat scroll 0% 0% / cover padding-box border-box",
+      "count": 1
+    },
+    {
+      "name": "section-6",
+      "background": "rgb(217, 223, 227) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 8
+    },
+    {
+      "name": "section-7",
+      "background": "rgb(235, 238, 240) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 1
+    }
+  ]
+}
