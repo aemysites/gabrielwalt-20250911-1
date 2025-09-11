@@ -1,0 +1,93 @@
+{
+  "originUrl": "https://www.dws.com",
+  "aborted": false,
+  "urls": [
+    {
+      "url": "https://www.dws.com/en-ch/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch",
+      "id": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/capabilities",
+      "id": "4de2d5b7730517692e0674c6ba7ce590c79d0920"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good",
+      "id": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won",
+      "id": "d1d81c0652bdf709b21a81c5f1d369ebe8376599"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset",
+      "id": "ce53f34328575d43e6f85bb76f21038b87310cce"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/insights",
+      "id": "b344348513c644180f2e559c46cd987075d96e51"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average",
+      "id": "6210ba716c41172580a627386d24c717d4866c79"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward",
+      "id": "707fd4d22f62aab1b88961aa60782c3e9090d64e"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation",
+      "id": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/our-profile/about-us",
+      "id": "d568a32d655156061d8edf5f2ba9daddd6a19760"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/service/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/service",
+      "id": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba"
+    },
+    {
+      "url": "https://www.dws.com/en-ch/solutions/",
+      "source": "MANUAL",
+      "targetPath": "/en-ch/solutions",
+      "id": "f9e43a28504f463170f0057a71bbdd462f7975a4"
+    }
+  ],
+  "lastCrawled": null,
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": 100,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "manual",
+    "strategiesAttempted": [
+      "MANUAL"
+    ]
+  },
+  "extractionErrors": [],
+  "errorCountMessage": "none"
+}
