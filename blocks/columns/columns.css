@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -40,7 +41,6 @@
   width: 100%;
 }
 
-/* Four columns, row layout */
 .columns.columns9 > div {
   display: flex;
   flex-direction: row;
@@ -48,11 +48,10 @@
   justify-content: flex-start;
   width: 100%;
   min-height: 220px;
-  gap: 80px; /* Larger gap for a more open, airy layout */
+  gap: 80px;
   background: #f8fbfb;
 }
 
-/* Logo column: more left padding, slightly wider, top-aligned logo */
 .columns.columns9 > div > div:first-child {
   flex: 0 0 260px;
   min-width: 180px;
@@ -61,7 +60,6 @@
   justify-content: flex-start;
 }
 
-/* Ensure logo is top-aligned with no extra margin */
 .columns.columns9 .columns-img-col {
   margin: 0;
   display: flex;
@@ -75,7 +73,6 @@
   margin: 0;
 }
 
-/* Text columns: slightly wider, less top/bottom padding */
 .columns.columns9 > div > div:not(:first-child) {
   flex: 1 1 0;
   min-width: 180px;
@@ -84,13 +81,11 @@
   position: relative;
 }
 
-/* Divider lines: visually shorter by reducing padding and column height */
 .columns.columns9 > div > div:nth-child(3),
 .columns.columns9 > div > div:nth-child(4) {
   border-left: 1px solid #e8ecec;
 }
 
-/* Headings: top-aligned, bold, compact spacing */
 .columns.columns9 h2 {
   font-size: 15px;
   font-weight: 700;
@@ -102,7 +97,6 @@
   padding: 0;
 }
 
-/* Lists: more vertical space between links */
 .columns.columns9 ul {
   list-style: none;
   padding: 0;
@@ -117,7 +111,6 @@
   margin-bottom: 0;
 }
 
-/* Links: slightly larger font for better legibility */
 .columns.columns9 a {
   color: #0096a9;
   font-size: 18px;
@@ -134,7 +127,6 @@
   text-decoration: underline;
 }
 
-/* Responsive: stack vertically, remove dividers */
 @media (width <= 900px) {
   .columns.columns9 > div {
     flex-direction: column;
@@ -154,5 +146,138 @@
   .columns.columns9 > div > div:first-child {
     border-top: none;
     padding: 20px;
+  }
+}
+
+
+.columns.columns22,
+.block.columns.columns22 {
+  background: #1d2222;
+  padding: 0;
+}
+
+.columns.columns22 > div,
+.block.columns.columns22 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+  width: 100%;
+}
+
+/* LEFT GROUP: "Switzerland - English" */
+.columns.columns22 > div > div:first-child,
+.block.columns.columns22 > div > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 32px;
+}
+
+.columns.columns22 > div > div:first-child *,
+.block.columns.columns22 > div > div:first-child * {
+  color: #e0e4e3;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+/* RIGHT GROUP: Contact, Newsletter, Socials */
+.columns.columns22 > div > div:last-child,
+.block.columns.columns22 > div > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-right: 32px;
+}
+
+.columns.columns22 > div > div:last-child p,
+.columns.columns22 > div > div:last-child a,
+.block.columns.columns22 > div > div:last-child p,
+.block.columns.columns22 > div > div:last-child a {
+  color: #e0e4e3;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+/* Newsletter: Plain link style */
+.columns.columns22 .button-container .button,
+.block.columns.columns22 .button-container .button {
+  background: none;
+  color: #e0e4e3;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  box-shadow: none;
+}
+
+/* Social "icons" as circles with spacing */
+.columns.columns22 > div > div:last-child p:nth-child(n+3),
+.block.columns.columns22 > div > div:last-child p:nth-child(n+3) {
+  width: 36px;
+  height: 36px;
+  background: #2d3232;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  color: #e0e4e3;
+  font-size: 15px;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Remove extra margin from last circle */
+.columns.columns22 > div > div:last-child p:last-child,
+.block.columns.columns22 > div > div:last-child p:last-child {
+  margin-right: 0;
+}
+
+/* Ensure all children inherit correct color */
+.columns.columns22 *,
+.block.columns.columns22 * {
+  color: #e0e4e3;
+  background: none;
+  box-shadow: none;
+}
+
+/* Responsive: stack vertically on narrow screens */
+@media (width <= 900px) {
+  .columns.columns22 > div,
+  .block.columns.columns22 > div {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 72px;
+    gap: 16px;
+  }
+
+  .columns.columns22 > div > div:first-child,
+  .block.columns.columns22 > div > div:first-child {
+    padding-left: 16px;
+    margin-bottom: 8px;
+  }
+
+  .columns.columns22 > div > div:last-child,
+  .block.columns.columns22 > div > div:last-child {
+    padding-right: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .columns.columns22 > div > div:last-child p:nth-child(n+3),
+  .block.columns.columns22 > div > div:last-child p:nth-child(n+3) {
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
   }
 }
