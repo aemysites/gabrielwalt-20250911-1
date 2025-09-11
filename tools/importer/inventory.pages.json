@@ -1,0 +1,100 @@
+{
+  "templates": [
+    {
+      "name": "'Dashboard UI'",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://www.dws.com/en-ch/solutions/",
+          "uuid": "f9e43a28504f463170f0057a71bbdd462f7975a4"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/",
+          "uuid": "b344348513c644180f2e559c46cd987075d96e51"
+        }
+      ]
+    },
+    {
+      "name": "Dashboard Template",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/riding-off-into-the-sunset/",
+          "uuid": "ce53f34328575d43e6f85bb76f21038b87310cce"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/no-battle-is-ever-won/",
+          "uuid": "d1d81c0652bdf709b21a81c5f1d369ebe8376599"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/alternatives/liquid-real-assets/lra-market-update/growth-is-good/",
+          "uuid": "e286ec6c5198cd872ca2b287cb23aa6c54fd5758"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard'",
+      "cluster": 3,
+      "pages": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/us-real-yields-is-the-trend-turning-downward/",
+          "uuid": "707fd4d22f62aab1b88961aa60782c3e9090d64e"
+        },
+        {
+          "url": "https://www.dws.com/en-ch/insights/cio-view/charts-of-the-week/2025/germany-gas-storage-lags-seasonal-average/",
+          "uuid": "6210ba716c41172580a627386d24c717d4866c79"
+        }
+      ]
+    },
+    {
+      "name": "Dashboard Template",
+      "cluster": 4,
+      "pages": [
+        {
+          "url": "https://www.dws.com/en-ch/capabilities/",
+          "uuid": "4de2d5b7730517692e0674c6ba7ce590c79d0920"
+        }
+      ]
+    },
+    {
+      "name": "'Portfolio Showcase'",
+      "cluster": 5,
+      "pages": [
+        {
+          "url": "https://www.dws.com/en-ch/our-profile/about-us/",
+          "uuid": "d568a32d655156061d8edf5f2ba9daddd6a19760"
+        }
+      ]
+    },
+    {
+      "name": "Blog Post Template",
+      "cluster": 6,
+      "pages": [
+        {
+          "url": "https://www.dws.com/en-ch/insights/global-research-institute/the-great-energy-race-challenge-and-transformation/",
+          "uuid": "7c8b8f2ae0dbee447470345329b272cf2d3bfee5"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Template'",
+      "cluster": 7,
+      "pages": [
+        {
+          "url": "https://www.dws.com/en-ch/service/",
+          "uuid": "0d27e29d9ffef79e0e65f9a625881a74c0d034ba"
+        }
+      ]
+    },
+    {
+      "name": "News Listing",
+      "cluster": 8,
+      "pages": [
+        {
+          "url": "https://www.dws.com/en-ch/",
+          "uuid": "c0207aae8ecd4fc0708dc551dedb8b1a0352966f"
+        }
+      ]
+    }
+  ]
+}
