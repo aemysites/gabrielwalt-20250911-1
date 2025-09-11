@@ -31,3 +31,128 @@
     order: unset;
   }
 }
+
+
+.columns.columns9 {
+  background: #f8fbfb;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Four columns, row layout */
+.columns.columns9 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 220px;
+  gap: 80px; /* Larger gap for a more open, airy layout */
+  background: #f8fbfb;
+}
+
+/* Logo column: more left padding, slightly wider, top-aligned logo */
+.columns.columns9 > div > div:first-child {
+  flex: 0 0 260px;
+  min-width: 180px;
+  max-width: 320px;
+  padding: 0 36px 0 60px;
+  justify-content: flex-start;
+}
+
+/* Ensure logo is top-aligned with no extra margin */
+.columns.columns9 .columns-img-col {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.columns.columns9 .columns-img-col img {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+/* Text columns: slightly wider, less top/bottom padding */
+.columns.columns9 > div > div:not(:first-child) {
+  flex: 1 1 0;
+  min-width: 180px;
+  max-width: 260px;
+  padding: 8px 34px;
+  position: relative;
+}
+
+/* Divider lines: visually shorter by reducing padding and column height */
+.columns.columns9 > div > div:nth-child(3),
+.columns.columns9 > div > div:nth-child(4) {
+  border-left: 1px solid #e8ecec;
+}
+
+/* Headings: top-aligned, bold, compact spacing */
+.columns.columns9 h2 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 18px;
+  line-height: 1.25;
+  text-align: left;
+  padding: 0;
+}
+
+/* Lists: more vertical space between links */
+.columns.columns9 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns9 li {
+  margin-bottom: 20px;
+}
+
+.columns.columns9 li:last-child {
+  margin-bottom: 0;
+}
+
+/* Links: slightly larger font for better legibility */
+.columns.columns9 a {
+  color: #0096a9;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.6;
+  transition: color 0.2s;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns9 a:hover {
+  color: #007b89;
+  text-decoration: underline;
+}
+
+/* Responsive: stack vertically, remove dividers */
+@media (width <= 900px) {
+  .columns.columns9 > div {
+    flex-direction: column;
+    min-height: unset;
+    gap: 0;
+  }
+
+  .columns.columns9 > div > div {
+    max-width: unset;
+    min-width: 0;
+    width: 100%;
+    padding: 20px;
+    border-left: none;
+    border-top: 1px solid #e8ecec;
+  }
+
+  .columns.columns9 > div > div:first-child {
+    border-top: none;
+    padding: 20px;
+  }
+}
