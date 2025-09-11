@@ -390,7 +390,6 @@
   display: block;
 }
 
-/* Play button overlay */
 .cards.cards20 .cards-card-image::after {
   content: '';
   position: absolute;
@@ -402,8 +401,6 @@
   border-radius: 50%;
   display: block;
   box-shadow: 0 2px 8px 0 rgb(16 32 34 / 10%);
-
-  /* Play icon via SVG background */
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5V17L17 11L7 5Z' fill='white'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
@@ -411,7 +408,6 @@
   pointer-events: none;
 }
 
-/* Duration badge overlay (time is always last .cards-card-body > p for featured, and third for list) */
 .cards.cards20 > ul > li:first-child .cards-card-image::before,
 .cards.cards20 > ul > li:nth-child(2) .cards-card-image::before {
   content: '';
@@ -434,7 +430,6 @@
   width: 44px;
 }
 
-/* "now running" badge for third card */
 .cards.cards20 > ul > li:nth-child(3) .cards-card-image::before {
   content: '';
   position: absolute;
@@ -448,7 +443,6 @@
   z-index: 2;
 }
 
-/* Card body styles */
 .cards.cards20 .cards-card-body {
   padding: 24px 24px 28px;
   display: flex;
@@ -501,7 +495,6 @@
   margin-bottom: 0;
 }
 
-/* Responsive adjustments */
 @media (width <= 900px) {
   .cards.cards20 {
     padding: 16px;
@@ -524,5 +517,98 @@
   .cards.cards20 .cards-card-body,
   .cards.cards20 > ul > li:first-child .cards-card-body {
     padding: 16px 16px 20px;
+  }
+}
+
+
+.cards.cards30 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards.cards30 > ul {
+  /* Switch to CSS Grid for more robust multi-row/column alignment */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: stretch;
+}
+
+.cards.cards30 > ul > li {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgb(60 60 60 / 10%);
+  overflow: hidden;
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+  transition: box-shadow 0.2s;
+  border: none;
+
+  /* Accent triangle with diagonal arrow, sized for grid */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 60px 60px;
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='60,60 60,0 0,60' fill='%2300b2a9'/%3E%3Cpath d='M22 44L38 28' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpolyline points='33,28 38,28 38,33' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+}
+
+.cards.cards30 .cards-card-image {
+  width: 100%;
+  height: 140px;
+  background: #eee;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cards.cards30 .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background: none;
+}
+
+.cards.cards30 .cards-card-body {
+  flex: 1 1 auto;
+  padding: 24px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cards.cards30 .cards-card-body > p:first-child {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #212121;
+  margin: 0 0 1em;
+  line-height: 1.2;
+}
+
+.cards.cards30 .cards-card-body > p:not(:first-child) {
+  font-size: 1rem;
+  color: #616161;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (width <= 900px) {
+  .cards.cards30 > ul {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
