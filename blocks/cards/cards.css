@@ -529,7 +529,6 @@
 }
 
 .cards.cards30 > ul {
-  /* Switch to CSS Grid for more robust multi-row/column alignment */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
@@ -551,8 +550,6 @@
   min-height: 420px;
   transition: box-shadow 0.2s;
   border: none;
-
-  /* Accent triangle with diagonal arrow, sized for grid */
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 60px 60px;
@@ -612,3 +609,222 @@
     gap: 24px;
   }
 }
+
+
+.cards.cards31 {
+  padding: 32px 0;
+}
+
+/* Grid layout for cards: compact, visually balanced, max-width similar to original */
+.cards.cards31 > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  place-items: stretch stretch;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1080px;
+  grid-auto-flow: row dense;
+}
+
+/* Responsive: reduce columns to avoid empty space in last row */
+@media (width <= 1000px) {
+  .cards.cards31 > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 700px;
+  }
+}
+
+@media (width <= 700px) {
+  .cards.cards31 > ul {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 100%;
+  }
+}
+
+/* Individual cards: shorter, softer corners/shadow, compact */
+.cards.cards31 > ul > li {
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 10px 0 rgb(38 57 77 / 9%);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.18s;
+  place-self: stretch stretch;
+}
+
+/* Card image/banner at top, always present even if empty */
+.cards.cards31 .cards-card-image {
+  width: 100%;
+  height: 110px;
+  min-height: 110px;
+  max-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f4f6f8;
+  position: relative;
+}
+
+/* Fill image/banner area */
+.cards.cards31 .cards-card-image img,
+.cards.cards31 .cards-card-image picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* If image is missing, show a subtle accent for visual consistency */
+.cards.cards31 .cards-card-image:empty {
+  background: linear-gradient(135deg, #f4f6f8 85%, #eaeef6 100%);
+}
+
+/* Card body: more compact padding, tight vertical stack */
+.cards.cards31 .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 16px 14px 22px;
+  gap: 5px;
+  position: relative;
+  margin: 0;
+}
+
+/* Remove default <p> margin inside card body */
+.cards.cards31 .cards-card-body p {
+  margin: 0;
+}
+
+/* Date (first p): smaller, lighter */
+.cards.cards31 .cards-card-body p:nth-child(1) {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #26394D;
+  font-weight: 500;
+  margin-bottom: 1px;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+/* Label (second p): pill, uppercase, row-flex if multiple, tight below */
+.cards.cards31 .cards-card-body p:nth-child(2) {
+  display: inline-flex;
+  align-items: center;
+  background: #F0F2F4;
+  color: #26394D;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 2px 10px;
+  margin-bottom: 2px;
+  letter-spacing: 0.09em;
+  opacity: 0.95;
+  min-height: 20px;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* Title (third p): bold, a touch larger, compact */
+.cards.cards31 .cards-card-body p:nth-child(3) {
+  font-size: 20px;
+  color: #26394D;
+  font-weight: 700;
+  margin-bottom: 2px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+
+/* Description (fourth p): slightly smaller, tighter */
+.cards.cards31 .cards-card-body p:nth-child(4) {
+  font-size: 14px;
+  color: #556477;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.32;
+  opacity: 0.96;
+}
+
+/* Button container (last p): floating, smaller, close to edge */
+.cards.cards31 .cards-card-body p.button-container {
+  margin-top: auto;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Arrow button: smaller, tight to card edge, overrides default button style */
+.cards.cards31 .cards-card-body .button-container .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #008489;
+  color: #fff;
+  font-size: 0;
+  box-shadow: 0 2px 8px 0 rgb(0 132 137 / 14%);
+  border: none;
+  padding: 0;
+  transition: background 0.2s;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  min-width: 0;
+}
+
+/* Arrow icon sizing */
+.cards.cards31 .cards-card-body .button-container .button::after {
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: auto;
+  background: white;
+  mask-image: url("data:image/svg+xml;utf8,<svg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/></svg>");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-image: url("data:image/svg+xml;utf8,<svg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/></svg>");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  content: "";
+}
+
+.cards.cards31 .cards-card-body .button-container .button:hover,
+.cards.cards31 .cards-card-body .button-container .button:focus {
+  background: #0baea6;
+}
+
+/* Make sure all links in card body do not expand beyond button container */
+.cards.cards31 .cards-card-body .button-container a.button {
+  max-width: 24px;
+  min-width: 0;
+  overflow: visible;
+  box-shadow: none;
+  border: none;
+}
+
+/* Card hover effect: slightly stronger shadow */
+.cards.cards31 > ul > li:hover {
+  box-shadow: 0 8px 18px 0 rgb(38 57 77 / 13%);
+}
+
+/* Compact card: ensure grid fills space efficiently */
