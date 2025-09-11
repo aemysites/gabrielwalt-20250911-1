@@ -615,7 +615,6 @@
   padding: 32px 0;
 }
 
-/* Grid layout for cards: compact, visually balanced, max-width similar to original */
 .cards.cards31 > ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -628,7 +627,6 @@
   grid-auto-flow: row dense;
 }
 
-/* Responsive: reduce columns to avoid empty space in last row */
 @media (width <= 1000px) {
   .cards.cards31 > ul {
     grid-template-columns: repeat(2, 1fr);
@@ -645,7 +643,6 @@
   }
 }
 
-/* Individual cards: shorter, softer corners/shadow, compact */
 .cards.cards31 > ul > li {
   background: #fff;
   border-radius: 11px;
@@ -660,7 +657,6 @@
   place-self: stretch stretch;
 }
 
-/* Card image/banner at top, always present even if empty */
 .cards.cards31 .cards-card-image {
   width: 100%;
   height: 110px;
@@ -674,7 +670,6 @@
   position: relative;
 }
 
-/* Fill image/banner area */
 .cards.cards31 .cards-card-image img,
 .cards.cards31 .cards-card-image picture {
   width: 100%;
@@ -683,12 +678,10 @@
   display: block;
 }
 
-/* If image is missing, show a subtle accent for visual consistency */
 .cards.cards31 .cards-card-image:empty {
   background: linear-gradient(135deg, #f4f6f8 85%, #eaeef6 100%);
 }
 
-/* Card body: more compact padding, tight vertical stack */
 .cards.cards31 .cards-card-body {
   display: flex;
   flex-direction: column;
@@ -699,12 +692,10 @@
   margin: 0;
 }
 
-/* Remove default <p> margin inside card body */
 .cards.cards31 .cards-card-body p {
   margin: 0;
 }
 
-/* Date (first p): smaller, lighter */
 .cards.cards31 .cards-card-body p:nth-child(1) {
   font-size: 10px;
   text-transform: uppercase;
@@ -715,7 +706,6 @@
   opacity: 0.7;
 }
 
-/* Label (second p): pill, uppercase, row-flex if multiple, tight below */
 .cards.cards31 .cards-card-body p:nth-child(2) {
   display: inline-flex;
   align-items: center;
@@ -735,7 +725,6 @@
   gap: 5px;
 }
 
-/* Title (third p): bold, a touch larger, compact */
 .cards.cards31 .cards-card-body p:nth-child(3) {
   font-size: 20px;
   color: #26394D;
@@ -745,7 +734,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Description (fourth p): slightly smaller, tighter */
 .cards.cards31 .cards-card-body p:nth-child(4) {
   font-size: 14px;
   color: #556477;
@@ -755,7 +743,6 @@
   opacity: 0.96;
 }
 
-/* Button container (last p): floating, smaller, close to edge */
 .cards.cards31 .cards-card-body p.button-container {
   margin-top: auto;
   position: absolute;
@@ -769,7 +756,6 @@
   align-items: center;
 }
 
-/* Arrow button: smaller, tight to card edge, overrides default button style */
 .cards.cards31 .cards-card-body .button-container .button {
   display: flex;
   align-items: center;
@@ -790,17 +776,12 @@
   min-width: 0;
 }
 
-/* Arrow icon sizing */
 .cards.cards31 .cards-card-body .button-container .button::after {
   display: block;
   width: 9px;
   height: 9px;
   margin: auto;
   background: white;
-  mask-image: url("data:image/svg+xml;utf8,<svg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/></svg>");
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: contain;
   mask-image: url("data:image/svg+xml;utf8,<svg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/></svg>");
   mask-position: center;
   mask-repeat: no-repeat;
@@ -813,7 +794,6 @@
   background: #0baea6;
 }
 
-/* Make sure all links in card body do not expand beyond button container */
 .cards.cards31 .cards-card-body .button-container a.button {
   max-width: 24px;
   min-width: 0;
@@ -822,9 +802,173 @@
   border: none;
 }
 
-/* Card hover effect: slightly stronger shadow */
 .cards.cards31 > ul > li:hover {
   box-shadow: 0 8px 18px 0 rgb(38 57 77 / 13%);
 }
 
-/* Compact card: ensure grid fills space efficiently */
+
+.cards.cardsnoimages36 ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards.cardsnoimages36 ul li {
+  background: #F2F5F7;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgb(33 37 41 / 6%);
+  border: none;
+  padding: 0;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: visible;
+  max-width: 414px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards.cardsnoimages36 .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 28px 56px;
+  margin: 0;
+  min-height: 180px;
+  flex: 1 1 auto;
+  position: relative;
+  gap: 0;
+}
+
+/* PILL: Only style as a pill if likely a short label ("Press") */
+.cards.cardsnoimages36 .cards-card-body p:first-child {
+  max-width: 84px;
+  min-width: 50px;
+  background: #F2F5F7;
+  border: 1px solid #dddfe1;
+  border-radius: 12px;
+  color: #212529;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 2px 14px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  margin: 0;
+  z-index: 1;
+}
+
+/* HEADLINE: If first <p> is long (wraps or is not "Press"), fall back to block style headline */
+.cards.cardsnoimages36 .cards-card-body p:first-child + p {
+  margin-top: 34px;
+}
+
+.cards.cardsnoimages36 .cards-card-body p:first-child:nth-last-child(2),
+.cards.cardsnoimages36 .cards-card-body p:first-child:nth-last-child(1) {
+  /* fallback for long/only-child first <p> - treat as headline */
+  position: static;
+  background: none;
+  border: none;
+  color: #212529;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 10px;
+  text-align: left;
+  max-width: unset;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+/* TITLE styling (second <p> for "Press" cards, fallback for headlines) */
+.cards.cardsnoimages36 .cards-card-body p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.22;
+  margin: 0 0 10px;
+  text-align: left;
+  letter-spacing: -0.01em;
+  min-height: 38px;
+}
+
+/* DESCRIPTION styling (third <p>, or second if only two) */
+.cards.cardsnoimages36 .cards-card-body p:nth-child(3),
+.cards.cardsnoimages36 .cards-card-body p:nth-child(2):last-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666D73;
+  margin: 0;
+  line-height: 1.5;
+  min-height: 32px;
+}
+
+/* Remove default p margin in card body */
+.cards.cardsnoimages36 .cards-card-body p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Tighter vertical spacing between elements */
+.cards.cardsnoimages36 .cards-card-body p + p {
+  margin-top: 8px;
+}
+
+/* TRIANGLE ACCENT in bottom right */
+.cards.cardsnoimages36 ul li::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 52px;
+  height: 52px;
+  background: #00787A;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  z-index: 2;
+  pointer-events: none;
+  display: block;
+  content: "";
+}
+
+/* ARROW over triangle accent */
+.cards.cardsnoimages36 ul li::before {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  width: 18px;
+  height: 18px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+  z-index: 3;
+  background: transparent;
+  box-sizing: border-box;
+  border-radius: 2px;
+  pointer-events: none;
+  display: block;
+  content: "";
+}
+
+/* Responsive stacking: 1 column below 750px */
+@media (width <= 750px) {
+  .cards.cardsnoimages36 ul {
+    grid-template-columns: 1fr;
+  }
+
+  .cards.cardsnoimages36 .cards-card-body {
+    padding: 24px 14px 56px;
+  }
+
+  .cards.cardsnoimages36 ul li {
+    max-width: 100%;
+  }
+}
