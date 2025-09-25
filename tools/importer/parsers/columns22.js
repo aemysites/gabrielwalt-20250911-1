@@ -1,35 +1,37 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: find the main container for the block
+  // Defensive: Find main content container
   const container = element.querySelector('.d-footer-top__container');
   if (!container) return;
 
-  // Column 1: Culture Switch
-  const cultureSwitch = container.querySelector('.d-footer-top__culture-switch');
-
-  // Column 2: Contact, Newsletter, Social Media
+  // Find left and right sections
+  const leftSection = container.querySelector('.d-footer-top__culture-switch');
   const rightSection = container.querySelector('.d-footer-top__right-section');
-  let contactAndNewsletter = null;
-  let socialMedia = null;
-  if (rightSection) {
-    contactAndNewsletter = rightSection.querySelector('.d-footer-top__right-section__contact-and-newsletter');
-    socialMedia = rightSection.querySelector('.d-footer-top__right-section__social-media');
-  }
 
-  // Compose column 2 cell content
-  const column2Content = [];
-  if (contactAndNewsletter) column2Content.push(contactAndNewsletter);
-  if (socialMedia) column2Content.push(socialMedia);
+  // Defensive: If either section is missing, don't proceed
+  if (!leftSection || !rightSection) return;
 
-  // Table header
+  // The left column: Language/Culture switch
+  // The right column: Contact, Newsletter, Social Media
+
+  // Compose left cell
+  // Use the entire leftSection for resilience
+  const leftCell = leftSection;
+
+  // Compose right cell
+  // We'll combine all rightSection content into one cell
+  const rightCell = rightSection;
+
+  // Build table rows
   const headerRow = ['Columns (columns22)'];
-  // Table content row: two columns
-  const contentRow = [cultureSwitch, column2Content];
+  const contentRow = [leftCell, rightCell];
 
-  // Build table
-  const cells = [headerRow, contentRow];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  // Create the table
+  const table = WebImporter.DOMUtils.createTable([
+    headerRow,
+    contentRow,
+  ], document);
 
-  // Replace original element
-  element.replaceWith(block);
+  // Replace the original element
+  element.replaceWith(table);
 }

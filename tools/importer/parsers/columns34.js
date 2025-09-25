@@ -1,41 +1,57 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: Find the main entry gate block
-  const entryGate = element.querySelector('.d-entry-gate');
-  if (!entryGate) return;
+  // Defensive: Find the main modal dialog (content container)
+  const modal = element.querySelector('.d-modal-dialog.d-entry-gate-modal__modal');
+  if (!modal) return;
 
-  // --- LEFT COLUMN ---
-  // Find the image container (contains <picture> with <img>)
-  const imageContainer = entryGate.querySelector('.d-entry-gate__image-container');
-  // Defensive: Use the whole image container if present
-  const leftCol = imageContainer || document.createElement('div');
+  // Find the main content split: image (left), content (right)
+  const gate = modal.querySelector('.d-entry-gate');
+  if (!gate) return;
 
-  // --- RIGHT COLUMN ---
-  // Find the content container
-  const contentContainer = entryGate.querySelector('.d-entry-gate__content-container');
-  // Defensive: Use the whole content container if present
-  const rightCol = contentContainer || document.createElement('div');
+  // Left column: image
+  const imageContainer = gate.querySelector('.d-entry-gate__image-container');
+  let leftCol = null;
+  if (imageContainer) {
+    // Use the picture element directly
+    const picture = imageContainer.querySelector('picture');
+    if (picture) {
+      leftCol = picture;
+    }
+  }
 
-  // --- FOOTER ROW ---
-  // Find the footer (contains link and button)
-  const footer = entryGate.querySelector('.d-entry-gate__footer');
-  // Defensive: Use the whole footer if present
-  const footerRow = [footer || document.createElement('div')]; // Only one column, no empty column
+  // Right column: heading, role selection, disclaimer, footer
+  const contentContainer = gate.querySelector('.d-entry-gate__content-container');
+  let rightColItems = [];
+  if (contentContainer) {
+    // Heading
+    const heading = contentContainer.querySelector('.d-entry-gate__heading');
+    if (heading) rightColItems.push(heading);
 
-  // --- TABLE STRUCTURE ---
-  // Header row
+    // Decision (role selection)
+    const decision = contentContainer.querySelector('.d-entry-gate__decision');
+    if (decision) rightColItems.push(decision);
+
+    // Disclaimer
+    const disclaimer = contentContainer.querySelector('.d-entry-gate__disclaimer');
+    if (disclaimer) rightColItems.push(disclaimer);
+  }
+
+  // Footer: Start page link and Accept & Continue button
+  const footer = gate.querySelector('.d-entry-gate__footer');
+  if (footer) {
+    rightColItems.push(footer);
+  }
+
+  // Compose columns
+  const columnsRow = [leftCol, rightColItems];
+
+  // Table header
   const headerRow = ['Columns (columns34)'];
-  // Content row: left (image), right (content)
-  const contentRow = [leftCol, rightCol];
 
-  // Build the table
-  const cells = [
-    headerRow,
-    contentRow,
-    footerRow,
-  ];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  // Build table
+  const cells = [headerRow, columnsRow];
+  const table = WebImporter.DOMUtils.createTable(cells, document);
 
-  // Replace the original element with the block
-  element.replaceWith(block);
+  // Replace original element
+  element.replaceWith(table);
 }

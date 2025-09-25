@@ -1,67 +1,59 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to extract card info from a card root element
+  // Helper to extract card info from a card element
   function extractCard(cardEl) {
-    // Find the image (first picture or img)
-    let imageEl = null;
-    const header = cardEl.querySelector('.d-base-card__header');
-    if (header) {
-      imageEl = header.querySelector('picture, img');
-      // If picture, use the picture; if img, use img
-      if (imageEl && imageEl.tagName === 'PICTURE') {
-        // Use the picture element as-is
-      } else if (imageEl && imageEl.tagName === 'IMG') {
-        // Use the img element as-is
-      } else {
-        imageEl = null;
+    // Find image (mandatory)
+    let img = cardEl.querySelector('img');
+    // Defensive: fallback to picture if img not found
+    if (!img) {
+      const picture = cardEl.querySelector('picture');
+      if (picture) img = picture;
+    }
+
+    // Find title (as heading)
+    let title = null;
+    const heading = cardEl.querySelector('.d-base-heading, [role="heading"]');
+    if (heading) {
+      // Use the heading element directly
+      title = heading;
+    }
+
+    // Find description (paragraph)
+    let desc = null;
+    const descP = cardEl.querySelector('.d-base-card__content p, .d-teaser-box__text p, p');
+    if (descP) {
+      desc = descP;
+    } else {
+      // Sometimes description is in a span inside p
+      const descSpan = cardEl.querySelector('.d-base-card__content span, .d-teaser-box__text span');
+      if (descSpan) {
+        // Wrap in a paragraph for consistency
+        const p = document.createElement('p');
+        p.append(descSpan);
+        desc = p;
       }
     }
 
-    // Find the title (heading)
-    let titleEl = null;
-    const titleWrap = cardEl.querySelector('.d-base-card__title');
-    if (titleWrap) {
-      titleEl = titleWrap.querySelector('[role="heading"], h2, h3, h4, h5, h6');
-    }
-
-    // Find the description (paragraph)
-    let descEl = null;
-    const contentWrap = cardEl.querySelector('.d-base-card__content');
-    if (contentWrap) {
-      descEl = contentWrap.querySelector('p');
-    }
-
-    // Compose the text cell
+    // Compose text cell: title (heading), description (paragraph)
     const textCell = [];
-    if (titleEl) textCell.push(titleEl);
-    if (descEl) textCell.push(descEl);
+    if (title) textCell.push(title);
+    if (desc) textCell.push(desc);
 
-    return [imageEl, textCell];
+    return [img, textCell];
   }
 
-  // Get all card items (direct children with class d-teaser-boxes-stack__item)
-  const cardItems = Array.from(element.querySelectorAll(':scope > .d-teaser-boxes-stack__item'));
+  // Get all cards (direct children with class d-teaser-boxes-stack__item)
+  const cards = Array.from(element.querySelectorAll(':scope > .d-teaser-boxes-stack__item'));
 
-  // Build rows
-  const rows = cardItems.map(item => {
-    // The card is inside the <a> tag
-    const link = item.querySelector('a');
-    let cardRoot = null;
-    if (link) {
-      // The card root is the .d-base-card inside the link
-      cardRoot = link.querySelector('.d-base-card');
-    }
-    if (!cardRoot) return [null, null];
-    return extractCard(cardRoot);
+  // Build table rows
+  const headerRow = ['Cards (cards17)'];
+  const rows = [headerRow];
+
+  cards.forEach(cardEl => {
+    rows.push(extractCard(cardEl));
   });
 
-  // Table header
-  const headerRow = ['Cards (cards17)'];
-  const tableRows = [headerRow, ...rows];
-
-  // Create the block table
-  const block = WebImporter.DOMUtils.createTable(tableRows, document);
-
-  // Replace the original element
-  element.replaceWith(block);
+  // Create table and replace element
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(table);
 }

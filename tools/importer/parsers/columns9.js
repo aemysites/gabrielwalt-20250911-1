@@ -1,36 +1,29 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: find the main container for the sitemap columns
-  const sitemapContainer = element.querySelector('.d-footer-sitemap__container');
-  if (!sitemapContainer) return;
+  // Find the main container for the footer sitemap columns
+  const container = element.querySelector('.d-footer-sitemap__container');
+  if (!container) return;
 
-  // Find logo column (first column)
-  const logoCol = sitemapContainer.querySelector('.d-footer-sitemap__logo');
+  // Get the logo (first column)
+  const logoDiv = container.querySelector('.d-footer-sitemap__logo');
 
-  // Find menu columns (remaining columns)
-  const menuContainer = sitemapContainer.querySelector('.d-footer-sitemap__menu');
-  let menuCols = [];
-  if (menuContainer) {
-    // Each menu__item is a column
-    menuCols = Array.from(menuContainer.querySelectorAll(':scope > .d-footer-sitemap__menu__item'));
+  // Get all menu columns (second, third, fourth columns)
+  const menuDiv = container.querySelector('.d-footer-sitemap__menu');
+  let menuItems = [];
+  if (menuDiv) {
+    menuItems = Array.from(menuDiv.querySelectorAll(':scope > .d-footer-sitemap__menu__item'));
   }
 
-  // Compose the columns for the second row
-  // First column: logo
-  // Next columns: each menu item
-  const columns = [];
-  if (logoCol) columns.push(logoCol);
-  columns.push(...menuCols);
+  // Build the columns row: logo, then each menu column
+  const columnsRow = [logoDiv, ...menuItems];
 
-  // Table rows
+  // Compose the table rows
   const headerRow = ['Columns (columns9)'];
-  const contentRow = columns;
+  const tableRows = [headerRow, columnsRow];
 
-  const cells = [headerRow, contentRow];
+  // Create the table block
+  const block = WebImporter.DOMUtils.createTable(tableRows, document);
 
-  // Create block table
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-
-  // Replace the original element
+  // Replace the original element with the new block
   element.replaceWith(block);
 }

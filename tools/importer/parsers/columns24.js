@@ -1,44 +1,35 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: Find the main hero block
+  // Find the hero block
   const hero = element.querySelector('.d-teaser-hero');
   if (!hero) return;
 
-  // Find the left column (text)
-  const contentBox = hero.querySelector('.d-teaser-hero__content--box');
+  // Left column: heading and text
+  const leftBox = hero.querySelector('.d-teaser-hero__content--box');
   let leftCol = null;
-  if (contentBox) {
-    // Use the whole content box for resilience
-    leftCol = contentBox;
-  } else {
-    // Fallback: try to find heading and text
-    const heading = hero.querySelector('h1');
-    const text = hero.querySelector('.d-teaser-hero_text, p');
+  if (leftBox) {
+    // Reference the actual heading and text containers
     leftCol = document.createElement('div');
+    // Heading
+    const heading = leftBox.querySelector('.d-teaser-hero__heading');
     if (heading) leftCol.appendChild(heading);
+    // Text
+    const text = leftBox.querySelector('.d-teaser-hero__text');
     if (text) leftCol.appendChild(text);
   }
 
-  // Find the right column (image)
+  // Right column: image only
   let rightCol = null;
-  const imageContainer = hero.querySelector('.d-teaser-hero__image-container');
-  if (imageContainer) {
-    // Use the whole image container for resilience
-    rightCol = imageContainer;
-  } else {
-    // Fallback: try to find picture/img
-    const picture = hero.querySelector('picture, img');
-    if (picture) {
-      rightCol = document.createElement('div');
-      rightCol.appendChild(picture);
-    }
+  const imgContainer = hero.querySelector('.d-teaser-hero__image-container');
+  if (imgContainer) {
+    const img = imgContainer.querySelector('img');
+    if (img) rightCol = img;
   }
 
   // Build the table
   const headerRow = ['Columns (columns24)'];
-  const contentRow = [leftCol, rightCol];
-  const cells = [headerRow, contentRow];
+  const row = [leftCol, rightCol].filter(Boolean); // Only non-empty columns
+  const table = WebImporter.DOMUtils.createTable([headerRow, row], document);
 
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(block);
+  element.replaceWith(table);
 }

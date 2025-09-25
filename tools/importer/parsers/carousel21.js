@@ -1,84 +1,75 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to extract the best image from a <picture>
-  function getImageFromPicture(picture) {
+  // Helper to extract the img from a <picture>
+  function getPictureImg(picture) {
     if (!picture) return null;
-    // Try to find <img> inside <picture>
-    const img = picture.querySelector('img');
-    if (img) return img;
-    return null;
+    return picture.querySelector('img');
   }
 
-  // Helper to extract the text content block from .teaser__cover
+  // Helper to extract text content (title, description, CTA) from teaser__cover
   function getTextContent(teaserCover) {
     if (!teaserCover) return null;
-    // We'll collect title, description, and CTA
     const content = [];
     // Title
     const title = teaserCover.querySelector('.teaser__title-cover');
     if (title) {
-      // Convert h3 to h2 for block consistency
-      const h2 = document.createElement('h2');
-      h2.innerHTML = title.innerHTML;
-      content.push(h2);
+      // Use heading element directly
+      content.push(title);
     }
     // Description (optional)
     const copyCover = teaserCover.querySelector('.teaser__copy-cover');
     if (copyCover) {
-      // Find <p> inside copyCover
-      const desc = copyCover.querySelector('p');
-      if (desc) {
-        content.push(desc);
-      }
-      // Find CTA <a> inside copyCover
-      const cta = copyCover.querySelector('a');
-      if (cta) {
-        content.push(cta);
-      }
-    } else {
-      // Sometimes CTA is present without description
-      const cta = teaserCover.querySelector('a');
-      if (cta) {
-        content.push(cta);
-      }
+      // Paragraphs
+      copyCover.querySelectorAll('p').forEach((p) => {
+        content.push(p);
+      });
+      // CTA (button link)
+      copyCover.querySelectorAll('a').forEach((a) => {
+        content.push(a);
+      });
     }
     return content.length ? content : null;
   }
 
   // Get all direct children with class 'teaser'
   const teasers = Array.from(element.querySelectorAll(':scope > .teaser'));
-
-  // Defensive: If no teasers, try to find any .teaser inside
+  // Defensive: also include the first teaser if it has 'active' class
   if (teasers.length === 0) {
-    teasers.push(...element.querySelectorAll('.teaser'));
+    // fallback: look for all direct children divs with class 'teaser' or 'teaser active'
+    teasers.push(...Array.from(element.querySelectorAll(':scope > div')).filter(div => div.classList.contains('teaser')));
   }
 
-  // Table header
+  // Build table rows
+  const rows = [];
+  // Header row
   const headerRow = ['Carousel (carousel21)'];
-  const rows = [headerRow];
+  rows.push(headerRow);
 
-  // For each teaser, build a row: [image, text content]
-  teasers.forEach(teaser => {
-    // Find .teaser__media
+  teasers.forEach((teaser) => {
+    // Image cell
     const media = teaser.querySelector('.teaser__media');
-    let imageEl = null;
+    let img = null;
     if (media) {
       const picture = media.querySelector('picture');
-      imageEl = getImageFromPicture(picture);
+      img = getPictureImg(picture);
     }
-    // Defensive: If no image, leave cell empty
-    const imageCell = imageEl ? imageEl : '';
+    // Defensive: if no img found, leave cell empty
+    const imageCell = img ? img : '';
 
-    // Find .teaser__cover
-    const cover = teaser.querySelector('.teaser__cover');
-    const textContent = getTextContent(cover);
-    const textCell = textContent ? textContent : '';
-
+    // Text cell
+    let textCell = '';
+    if (media) {
+      const teaserCover = media.querySelector('.teaser__cover');
+      const content = getTextContent(teaserCover);
+      if (content && content.length) {
+        textCell = content;
+      }
+    }
     rows.push([imageCell, textCell]);
   });
 
-  // Create the block table
+  // Create table block
   const block = WebImporter.DOMUtils.createTable(rows, document);
-  // Replace the original element
+  // Replace original element
   element.replaceWith(block);
 }

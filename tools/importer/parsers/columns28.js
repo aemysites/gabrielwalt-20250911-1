@@ -1,27 +1,45 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: find all immediate .owl-item children (each is a column)
-  const owlWrapper = element.querySelector('.owl-wrapper');
-  if (!owlWrapper) return;
-  const items = Array.from(owlWrapper.children).filter(child => child.classList.contains('owl-item'));
-  if (!items.length) return;
+  // Always use the target block name as the header row
+  const headerRow = ['Columns (columns28)'];
 
-  // For each .owl-item, grab its main content block (the .teaser inside)
+  // Defensive: find the direct wrapper of all columns
+  // The structure is: element > .owl-wrapper-outer > .owl-wrapper > .owl-item*
+  // Each .owl-item contains a column (teaser)
+  let wrapper = element.querySelector('.owl-wrapper');
+  if (!wrapper) {
+    // fallback: maybe .owl-wrapper-outer is the direct child
+    wrapper = element.querySelector('.owl-wrapper-outer');
+    if (wrapper) wrapper = wrapper.querySelector('.owl-wrapper');
+  }
+  if (!wrapper) {
+    // fallback: maybe element itself is the wrapper
+    wrapper = element;
+  }
+
+  // Get all visible columns (owl-item)
+  const items = Array.from(wrapper.querySelectorAll(':scope > .owl-item'));
+  if (!items.length) {
+    // fallback: maybe teasers are direct children
+    const teasers = Array.from(wrapper.querySelectorAll(':scope > .teaser'));
+    if (teasers.length) {
+      items.push(...teasers);
+    }
+  }
+
+  // Each column is the full content of .teaser inside .owl-item
   const columns = items.map(item => {
-    // Defensive: find the .teaser inside the .owl-item
-    const teaser = item.querySelector('.teaser');
-    if (!teaser) return '';
+    // Defensive: find the .teaser inside each .owl-item
+    const teaser = item.querySelector('.teaser') || item;
     return teaser;
   });
 
-  // Build the table: header row, then a row with each column's content
-  const headerRow = ['Columns (columns28)'];
-  const contentRow = columns;
-  const table = WebImporter.DOMUtils.createTable([
-    headerRow,
-    contentRow,
-  ], document);
+  // Build the table rows
+  const rows = [headerRow, columns];
 
-  // Replace the original element with the new table
-  element.replaceWith(table);
+  // Create the block table
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+
+  // Replace the original element with the block
+  element.replaceWith(block);
 }

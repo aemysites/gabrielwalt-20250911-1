@@ -1,91 +1,99 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to extract the image (first <img> in card)
-  function getCardImage(card) {
-    const img = card.querySelector('.d-base-card__header img, picture img');
-    if (img) {
-      // If parent is <picture>, return the <picture> element
-      if (img.parentElement && img.parentElement.tagName.toLowerCase() === 'picture') {
-        return img.parentElement.cloneNode(true);
+  // Helper to extract card info from each .d-teaser-boxes-stack__item
+  function extractCard(cardEl) {
+    // Find the image
+    let img = null;
+    const picture = cardEl.querySelector('picture');
+    if (picture) {
+      img = picture.querySelector('img');
+    }
+
+    // Find the tag(s)
+    let tag = null;
+    const tagList = cardEl.querySelector('.d-teaser-box__tags');
+    if (tagList) {
+      // Only take the first tag, if multiple
+      const tagSpan = tagList.querySelector('.d-base-tag--label');
+      if (tagSpan) {
+        tag = tagSpan.cloneNode(true);
       }
-      return img.cloneNode(true);
-    }
-    return '';
-  }
-
-  // Helper to extract all text content for the card
-  function getCardText(card, link) {
-    const frag = document.createDocumentFragment();
-
-    // Date
-    const date = card.querySelector('.d-teaser-box__date, .d-base-card__date');
-    if (date) {
-      Array.from(date.childNodes).forEach((node) => frag.appendChild(node.cloneNode(true)));
     }
 
-    // Tags
-    const tags = card.querySelector('.d-base-tag-list, .d-teaser-box__tags');
-    if (tags) {
-      Array.from(tags.childNodes).forEach((node) => frag.appendChild(node.cloneNode(true)));
+    // Find the date
+    let date = null;
+    const dateSpan = cardEl.querySelector('.d-teaser-box__date span');
+    if (dateSpan) {
+      date = dateSpan.cloneNode(true);
     }
 
-    // Title (heading)
-    const heading = card.querySelector('.d-teaser-box__heading, .d-base-heading');
+    // Find the title
+    let title = null;
+    const heading = cardEl.querySelector('.d-teaser-box__heading span');
     if (heading) {
-      Array.from(heading.childNodes).forEach((node) => frag.appendChild(node.cloneNode(true)));
+      title = heading.cloneNode(true);
     }
 
-    // Description (all paragraphs in content)
-    const content = card.querySelector('.d-base-card__content');
-    if (content) {
-      Array.from(content.childNodes).forEach((node) => frag.appendChild(node.cloneNode(true)));
+    // Find the description
+    let desc = null;
+    const descSpan = cardEl.querySelector('.d-teaser-box__text span');
+    if (descSpan) {
+      desc = descSpan.cloneNode(true);
     }
 
-    // CTA (link)
-    if (link && link.href) {
-      let ctaText = '';
-      if (heading) {
-        ctaText = heading.textContent.trim();
-      } else {
-        ctaText = link.textContent.trim();
-      }
-      if (ctaText) {
-        const cta = document.createElement('p');
-        const a = document.createElement('a');
-        a.href = link.href;
-        a.textContent = ctaText;
-        cta.appendChild(a);
-        frag.appendChild(cta);
-      }
+    // Find the link
+    let link = null;
+    const anchor = cardEl.closest('a');
+    if (anchor && anchor.href) {
+      link = document.createElement('a');
+      link.href = anchor.href;
+      link.textContent = anchor.getAttribute('aria-label') || (title ? title.textContent : anchor.href);
+      link.target = anchor.target || '_self';
+      link.rel = anchor.rel || '';
     }
 
-    return frag;
+    // Compose text cell content
+    const textCell = [];
+    if (date) {
+      const dateP = document.createElement('p');
+      dateP.appendChild(date);
+      textCell.push(dateP);
+    }
+    if (tag) {
+      const tagP = document.createElement('p');
+      tagP.appendChild(tag);
+      textCell.push(tagP);
+    }
+    if (title) {
+      const h3 = document.createElement('h3');
+      h3.appendChild(title);
+      textCell.push(h3);
+    }
+    if (desc) {
+      const descP = document.createElement('p');
+      descP.appendChild(desc);
+      textCell.push(descP);
+    }
+    if (link) {
+      textCell.push(link);
+    }
+
+    // Always use the image as the first cell
+    return [img, textCell];
   }
 
+  // Get all cards
+  const cardEls = element.querySelectorAll(':scope > .d-teaser-boxes-stack__item');
+  const rows = [];
+  // Header row
   const headerRow = ['Cards (cards31)'];
-  const rows = [headerRow];
-
-  // Get all card items
-  const cardItems = element.querySelectorAll(':scope > .d-teaser-boxes-stack__item');
-
-  cardItems.forEach((item) => {
-    const link = item.querySelector('a');
-    const card = item.querySelector('.d-base-card');
-    if (!card) return;
-
-    // Image cell
-    const img = getCardImage(card);
-    // Text cell
-    const textFrag = getCardText(card, link);
-    // Ensure all text content is included
-    const textCell = Array.from(textFrag.childNodes);
-
-    rows.push([
-      img ? img : '',
-      textCell.length ? textCell : '',
-    ]);
+  rows.push(headerRow);
+  // Card rows
+  cardEls.forEach(cardEl => {
+    rows.push(extractCard(cardEl));
   });
 
+  // Create the table block
   const block = WebImporter.DOMUtils.createTable(rows, document);
   element.replaceWith(block);
 }

@@ -1,33 +1,30 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Always use the target block name as the header row
+  // Block header row as per requirements
   const headerRow = ['Hero (hero7)'];
 
-  // Row 2: Background image (optional)
-  let imageCell = '';
-  // There is no image in the provided HTML, so leave cell empty
-  const imageRow = [imageCell];
+  // Always include three rows: header, background image, content
+  // Background image row: empty (no image in HTML)
+  const backgroundImageRow = [''];
 
-  // Row 3: Title, subheading, CTA (all optional)
-  let contentCell = '';
-  // Try to find heading, subheading, CTA in the overview block
+  // Content row: extract all text content from the overview block, preserving structure
+  let content = '';
   const overview = element.querySelector('.d-article-page-overview');
   if (overview) {
-    // Only extract text content from h2 if present and non-empty
+    // Extract h2 (title) if present
     const h2 = overview.querySelector('h2');
     if (h2 && h2.textContent.trim()) {
-      contentCell = h2.textContent.trim();
+      content = `<h2>${h2.textContent.trim()}</h2>`;
     }
   }
-  const contentRow = [contentCell];
 
-  // Build the table
-  const cells = [
+  const contentRow = [content];
+
+  const table = WebImporter.DOMUtils.createTable([
     headerRow,
-    imageRow,
+    backgroundImageRow,
     contentRow,
-  ];
+  ], document);
 
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(block);
+  element.replaceWith(table);
 }

@@ -1,54 +1,52 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the first active hero slide
-  const activeSlide = element.querySelector('.d-new-base-slider__item.d-new-base-slider__item--active');
-  if (!activeSlide) return;
+  // Find all slider items (each hero slide)
+  const sliderItems = element.querySelectorAll('.d-new-base-slider__item');
+  if (!sliderItems.length) return;
 
-  // Get the hero image (prefer <picture>, fallback to <img>)
-  let imageCell = null;
-  const heroImageContainer = activeSlide.querySelector('.d-teaser-hero__image-container');
-  if (heroImageContainer) {
-    const picture = heroImageContainer.querySelector('picture');
-    if (picture) {
-      imageCell = picture.cloneNode(true);
-    } else {
-      const img = heroImageContainer.querySelector('img');
-      if (img) imageCell = img.cloneNode(true);
+  sliderItems.forEach((item) => {
+    // 1. Header row
+    const headerRow = ['Hero (hero33)'];
+
+    // 2. Background image (picture or img inside .d-teaser-hero__image-container)
+    let bgImage = '';
+    const imgContainer = item.querySelector('.d-teaser-hero__image-container');
+    if (imgContainer) {
+      const picture = imgContainer.querySelector('picture');
+      if (picture) {
+        bgImage = picture.cloneNode(true);
+      } else {
+        const img = imgContainer.querySelector('img');
+        if (img) bgImage = img.cloneNode(true);
+      }
     }
-  }
+    const imageRow = [bgImage];
 
-  // Get the hero content (heading, text, CTA)
-  // Instead of grabbing the whole box, extract and combine the relevant parts
-  const contentParts = [];
-  const heroContentBox = activeSlide.querySelector('.d-teaser-hero__content--box');
-  if (heroContentBox) {
-    // Heading (h1 or .d-teaser-hero__heading)
-    const heading = heroContentBox.querySelector('h1, .d-teaser-hero__heading');
-    if (heading) contentParts.push(heading.cloneNode(true));
-    // Subheading (first .d-teaser-hero_text or .d-teaser-hero__text)
-    const subheading = heroContentBox.querySelector('.d-teaser-hero_text, .d-teaser-hero__text');
-    if (subheading) contentParts.push(subheading.cloneNode(true));
-    // CTA (button or link)
-    const cta = heroContentBox.querySelector('.d-teaser-hero__button_container a, .d-teaser-hero__button_container button');
-    if (cta) contentParts.push(cta.cloneNode(true));
-  }
-  // Fallback: if nothing found, try to grab the whole hero content
-  if (contentParts.length === 0) {
-    const heroContent = activeSlide.querySelector('.d-teaser-hero__content');
-    if (heroContent) contentParts.push(heroContent.cloneNode(true));
-    else contentParts.push(activeSlide.cloneNode(true));
-  }
+    // 3. Text content (title, subtitle, CTA)
+    let textContent = [];
+    const contentBox = item.querySelector('.d-teaser-hero__content--box');
+    if (contentBox) {
+      // Get all heading elements (h1, h2, h3, .d-base-heading--h1, .d-base-heading--h2, .d-base-heading--h3)
+      const headingEls = contentBox.querySelectorAll('h1, h2, h3, .d-base-heading--h1, .d-base-heading--h2, .d-base-heading--h3');
+      headingEls.forEach((el) => {
+        if (el.textContent.trim()) textContent.push(el.cloneNode(true));
+      });
+      // Get all paragraphs (including those in .d-teaser-hero_text)
+      const paragraphs = contentBox.querySelectorAll('p');
+      paragraphs.forEach((p) => {
+        if (p.textContent.trim()) textContent.push(p.cloneNode(true));
+      });
+      // Get all CTA links/buttons
+      const ctas = contentBox.querySelectorAll('a, button');
+      ctas.forEach((cta) => {
+        if (cta.textContent.trim()) textContent.push(cta.cloneNode(true));
+      });
+    }
+    const textRow = [textContent.length ? textContent : ''];
 
-  // Compose table rows
-  const headerRow = ['Hero (hero33)'];
-  const imageRow = [imageCell];
-  const contentRow = [contentParts];
-
-  const table = WebImporter.DOMUtils.createTable([
-    headerRow,
-    imageRow,
-    contentRow,
-  ], document);
-
-  element.replaceWith(table);
+    // Compose table
+    const cells = [headerRow, imageRow, textRow];
+    const block = WebImporter.DOMUtils.createTable(cells, document);
+    item.replaceWith(block);
+  });
 }

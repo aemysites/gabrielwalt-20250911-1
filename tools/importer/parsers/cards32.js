@@ -1,62 +1,69 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to extract card info from an .owl-item
+  // Helper to extract card info from each .owl-item
   function extractCard(cardEl) {
-    // Find image (mandatory)
-    let img = cardEl.querySelector('img');
-    // Defensive: if no img, try picture
-    if (!img) {
-      const pic = cardEl.querySelector('picture');
-      if (pic) {
-        img = pic.querySelector('img');
-      }
-    }
+    // The card is an <a> element
+    const link = cardEl.querySelector('a');
+    if (!link) return null;
 
-    // Find text content: title (h3), description (teaser__copy), and any other visible text
-    const textContent = document.createElement('div');
-    // Get all children of .teaser__content (title, description, etc)
-    const content = cardEl.querySelector('.teaser__content');
-    if (content) {
-      Array.from(content.childNodes).forEach(node => {
-        // Only append element nodes and text nodes with non-empty content
-        if (node.nodeType === Node.ELEMENT_NODE || (node.nodeType === Node.TEXT_NODE && node.textContent.trim())) {
-          textContent.appendChild(node.cloneNode(true));
-        }
-      });
+    // Image: find the <img> inside .teaser__media
+    const img = link.querySelector('.teaser__media img');
+
+    // Title: <h3 class="teaser__title">
+    const title = link.querySelector('.teaser__title');
+    // Description: <div class="teaser__copy">
+    const desc = link.querySelector('.teaser__copy');
+    // Date and Label: <span class="label-grey label"> and <span class="label-dark label">
+    const date = link.querySelector('.aux-pos-top .label-grey.label');
+    const label = link.querySelector('.aux-pos-top .label-dark.label');
+
+    // Compose the text cell
+    const textCell = document.createElement('div');
+    if (date) {
+      const dateSpan = document.createElement('span');
+      dateSpan.textContent = date.textContent;
+      textCell.appendChild(dateSpan);
+      textCell.appendChild(document.createElement('br'));
     }
-    // Optionally, add any extra visible text from aux-pos-top (date, label)
-    const auxTop = cardEl.querySelector('.aux-pos-top');
-    if (auxTop) {
-      Array.from(auxTop.childNodes).forEach(node => {
-        if (node.nodeType === Node.ELEMENT_NODE || (node.nodeType === Node.TEXT_NODE && node.textContent.trim())) {
-          textContent.appendChild(node.cloneNode(true));
-        }
-      });
+    if (label) {
+      const labelSpan = document.createElement('span');
+      labelSpan.textContent = label.textContent;
+      textCell.appendChild(labelSpan);
+      textCell.appendChild(document.createElement('br'));
     }
-    // Optionally, add a link to the article at the bottom
-    // If the card is an <a>, add its href as a CTA link
-    if (cardEl.tagName === 'A' && cardEl.href) {
-      const link = document.createElement('a');
-      link.href = cardEl.href;
-      link.textContent = 'Read more';
-      textContent.appendChild(link);
+    if (title) {
+      const h = document.createElement('h3');
+      h.textContent = title.textContent;
+      textCell.appendChild(h);
     }
-    return [img, textContent];
+    if (desc) {
+      const p = document.createElement('p');
+      p.textContent = desc.textContent;
+      textCell.appendChild(p);
+    }
+    // Optionally add CTA link if needed
+    // const cta = document.createElement('a');
+    // cta.href = link.href;
+    // cta.textContent = link.title || title?.textContent || 'Read more';
+    // textCell.appendChild(cta);
+
+    return [img, textCell];
   }
 
-  // Find all .owl-item elements (cards)
-  const cards = Array.from(element.querySelectorAll('.owl-item'));
-  const rows = cards.map(card => extractCard(card));
-
-  // Add header row
+  // Find all .owl-item elements
+  const cards = Array.from(element.querySelectorAll(':scope .owl-item'));
+  const rows = [];
+  // Header row
   const headerRow = ['Cards (cards32)'];
-  const tableRows = [
-    headerRow,
-    ...rows
-  ];
+  rows.push(headerRow);
+  // Card rows
+  cards.forEach(cardEl => {
+    const cardRow = extractCard(cardEl);
+    if (cardRow) rows.push(cardRow);
+  });
 
-  // Create table block
-  const table = WebImporter.DOMUtils.createTable(tableRows, document);
-  // Replace original element
+  // Create the block table
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+  // Replace the original element
   element.replaceWith(table);
 }

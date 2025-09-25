@@ -1,45 +1,50 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the main teaser block inside the carousel
-  const teaser = element.querySelector('.teaser--stage-full');
-  if (!teaser) return;
-
-  // --- IMAGE ROW ---
-  // Find the image inside the teaser__media > picture > img
-  let imgEl = null;
-  const media = teaser.querySelector('.teaser__media');
-  if (media) {
-    const picture = media.querySelector('picture');
-    if (picture) {
-      imgEl = picture.querySelector('img');
-    }
+  // Helper: safely get the first matching descendant
+  function findFirstDescendant(parent, selector) {
+    const el = parent.querySelector(selector);
+    return el || null;
   }
 
-  // --- CONTENT ROW ---
+  // 1. Header row
+  const headerRow = ['Hero (hero13)'];
+
+  // 2. Background image row (row 2)
+  // Find the main image inside the .teaser__media picture
+  let imageEl = null;
+  const teaserMedia = element.querySelector('.teaser__media picture');
+  if (teaserMedia) {
+    imageEl = findFirstDescendant(teaserMedia, 'img');
+  }
+  const imageRow = [imageEl ? imageEl : ''];
+
+  // 3. Content row (row 3)
   // Find the title and subheading
   let contentEls = [];
-  const auxWrapper = teaser.querySelector('.teaser__aux-wrapper');
+  // The content is inside .teaser__aux-wrapper .teaser__cover
+  const auxWrapper = element.querySelector('.teaser__aux-wrapper');
   if (auxWrapper) {
-    // The cover contains the text content
-    const cover = auxWrapper.querySelector('.teaser__cover');
+    // Find the cover (should be only one)
+    const cover = findFirstDescendant(auxWrapper, '.teaser__cover');
     if (cover) {
-      // Get all headings and paragraphs inside cover
-      const headings = cover.querySelectorAll('h1, h2, h3, h4, h5, h6');
-      const paragraphs = cover.querySelectorAll('p');
-      headings.forEach(h => contentEls.push(h));
-      paragraphs.forEach(p => contentEls.push(p));
+      // Find h1 and p inside the cover
+      const h1 = findFirstDescendant(cover, 'h1');
+      if (h1) contentEls.push(h1);
+      const p = findFirstDescendant(cover, 'p');
+      if (p) contentEls.push(p);
     }
   }
-
-  // Build the table rows
-  const headerRow = ['Hero (hero13)'];
-  const imageRow = [imgEl ? imgEl : ''];
   const contentRow = [contentEls.length ? contentEls : ''];
 
-  // Create the block table
-  const cells = [headerRow, imageRow, contentRow];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  // Compose the table
+  const cells = [
+    headerRow,
+    imageRow,
+    contentRow,
+  ];
 
-  // Replace the original element with the block
-  element.replaceWith(block);
+  // Create the block table
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  // Replace the original element
+  element.replaceWith(table);
 }
