@@ -1,47 +1,50 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: get all immediate children columns
-  const columns = Array.from(element.querySelectorAll(':scope > div'));
-
-  // First column: left content (intro, heading, dropdown)
-  const leftCol = columns[0];
-  // Second column: right content (links)
-  const rightCol = columns[1];
-
-  // Defensive: gather left column content
-  const leftContent = [];
-  // Get all paragraphs and headings in leftCol
-  leftCol.querySelectorAll(':scope > p, :scope > h3').forEach((el) => {
-    // Only add non-empty elements
-    if (el.textContent.trim() || el.querySelector('img')) {
-      leftContent.push(el);
-    }
-  });
-  // Get dropdown (location selector)
-  const dropdown = leftCol.querySelector(':scope > .d-dws-dropdown');
-  if (dropdown) {
-    leftContent.push(dropdown);
+  // Helper to get all immediate children with a given class
+  function getImmediateChildrenByClass(parent, className) {
+    return Array.from(parent.children).filter((el) => el.classList.contains(className));
   }
 
-  // Defensive: gather right column content
-  const rightContent = [];
-  // Find all .d-link-list containers
-  rightCol.querySelectorAll(':scope > .d-link-list').forEach((list) => {
-    // Find all links inside each list
-    list.querySelectorAll('a').forEach((a) => {
-      rightContent.push(a);
-    });
+  // Find the two main columns
+  const cols = getImmediateChildrenByClass(element, 'd-teaser-www__body__col');
+  // Defensive: fallback if above fails
+  if (cols.length < 2) {
+    // fallback: just use all direct children
+    cols.push(...element.querySelectorAll(':scope > div'));
+  }
+
+  // Left column: text, heading, dropdown
+  const leftCol = cols[0];
+  // Right column: links
+  const rightCol = cols[1];
+
+  // Defensive: if columns are missing, create empty divs
+  const leftContent = leftCol || document.createElement('div');
+  const rightContent = rightCol || document.createElement('div');
+
+  // Compose the columns cell content
+  // Left: gather all children of leftCol
+  const leftColContent = Array.from(leftContent.childNodes).filter((node) => {
+    // Remove empty paragraphs and whitespace-only nodes
+    if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'P' && !node.textContent.trim()) return false;
+    if (node.nodeType === Node.TEXT_NODE && !node.textContent.trim()) return false;
+    return true;
   });
 
-  // Table header
+  // Right: gather all children of rightCol
+  const rightColContent = Array.from(rightContent.childNodes).filter((node) => {
+    if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'DIV' && !node.textContent.trim()) return false;
+    if (node.nodeType === Node.TEXT_NODE && !node.textContent.trim()) return false;
+    return true;
+  });
+
+  // Table structure: header, then one row with two columns
   const headerRow = ['Columns (columns37)'];
-  // Table columns row
-  const columnsRow = [leftContent, rightContent];
+  const contentRow = [leftColContent, rightColContent];
+  const table = WebImporter.DOMUtils.createTable([
+    headerRow,
+    contentRow,
+  ], document);
 
-  // Build table
-  const cells = [headerRow, columnsRow];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-
-  // Replace original element
-  element.replaceWith(block);
+  element.replaceWith(table);
 }

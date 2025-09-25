@@ -1,49 +1,43 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to extract image and text from a card column
+  // Helper to extract image and text content from a card column
   function extractCardContent(col) {
-    // Find image: look for <picture> or <img>
-    const imgContainer = col.querySelector('.d-responsive-picture, picture, img');
-    let imageEl = null;
-    if (imgContainer) {
-      // If it's a picture, use it; else, if it's an img, use it
-      imageEl = imgContainer.tagName === 'PICTURE' ? imgContainer : imgContainer.querySelector('picture') || imgContainer.querySelector('img') || imgContainer;
+    // Find the image (mandatory)
+    const picture = col.querySelector('picture');
+    let image = null;
+    if (picture) {
+      image = picture;
     }
 
-    // Find text block: look for .d-html-content-block or fallback to first <h3> and following <div>
-    let textBlock = col.querySelector('.d-html-content-block');
-    if (!textBlock) {
-      // Defensive fallback: try to find heading and paragraph
-      const heading = col.querySelector('h3, h2, h1');
-      const desc = col.querySelector('p');
-      if (heading || desc) {
-        textBlock = document.createElement('div');
-        if (heading) textBlock.appendChild(heading);
-        if (desc) textBlock.appendChild(desc);
-      }
+    // Find the text content block
+    const textBlock = col.querySelector('.d-html-content-block');
+    let textContent = [];
+    if (textBlock) {
+      // Get the heading (optional)
+      const heading = textBlock.querySelector('h3');
+      if (heading) textContent.push(heading);
+      // Get the description (optional)
+      const desc = textBlock.querySelector('.teaser__copy');
+      if (desc) textContent.push(desc);
     }
-    return [imageEl, textBlock];
+    return [image, textContent];
   }
 
-  // Get all immediate child columns (cards)
-  const cardCols = Array.from(element.children);
+  // Get all immediate child columns (should be 3 for this block)
+  const columns = Array.from(element.children);
   const rows = [];
-
-  // Table header
+  // Header row
   rows.push(['Cards (cards10)']);
-
-  // Each card column becomes a row
-  cardCols.forEach((col) => {
-    // Defensive: skip empty columns
-    if (!col || !col.querySelector) return;
-    const [imageEl, textBlock] = extractCardContent(col);
-    // Only add row if both image and text exist
-    if (imageEl && textBlock) {
-      rows.push([imageEl, textBlock]);
+  // For each column, extract card content
+  columns.forEach((col) => {
+    const [image, textContent] = extractCardContent(col);
+    if (image && textContent.length) {
+      rows.push([image, textContent]);
     }
   });
 
-  // Create block table and replace element
-  const block = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(block);
+  // Create the table block
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+  // Replace the original element
+  element.replaceWith(table);
 }

@@ -1,46 +1,56 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: Only proceed if element exists
-  if (!element) return;
-
-  // Table header row as required
+  // Table header row as per block requirements
   const headerRow = ['Cards (cards29)'];
   const rows = [headerRow];
 
-  // Find all card links (each card is an <a> inside .teaser__wrapper)
-  const teaserWrapper = element.querySelector('.teaser__wrapper');
-  if (!teaserWrapper) return;
-  const cardLinks = Array.from(teaserWrapper.querySelectorAll(':scope > a.teaser'));
+  // Find the main row containing the cards
+  const cardRow = element.querySelector('.teaser__wrapper');
+  if (!cardRow) {
+    // Defensive: fallback, nothing to do
+    return;
+  }
 
-  cardLinks.forEach((card) => {
-    // --- IMAGE CELL ---
-    // Find the image inside the card
-    let imgEl = null;
-    const picture = card.querySelector('.teaser__media picture');
+  // Each card is an <a.teaser>
+  const cards = cardRow.querySelectorAll(':scope > a.teaser');
+  cards.forEach((card) => {
+    // IMAGE CELL
+    let imageEl = null;
+    const picture = card.querySelector('.teaser__picture');
     if (picture) {
-      imgEl = picture.querySelector('img');
+      // Use the <img> inside <picture>
+      imageEl = picture.querySelector('img');
     }
-    // Defensive: If no image, skip this card
-    if (!imgEl) return;
 
-    // --- TEXT CELL ---
+    // TEXT CELL
     const textCellContent = [];
     // Title (h3)
     const title = card.querySelector('.teaser__title');
-    if (title) textCellContent.push(title);
-    // Description (teaser__copy)
+    if (title) {
+      // Use a heading element
+      textCellContent.push(title);
+    }
+    // Description (div.teaser__copy)
     const desc = card.querySelector('.teaser__copy');
-    if (desc) textCellContent.push(desc);
-    // Call-to-action: Use the card's link text, but only if not redundant
-    // In this HTML, the link itself wraps the card, so no separate CTA
-    // If needed, could add a link to card.href with card.title
-    // But since the whole card is clickable, skip extra CTA
+    if (desc) {
+      textCellContent.push(desc);
+    }
+    // CTA: If the whole card is a link, and it's not just a #, add a CTA at the bottom
+    if (card.href && card.href !== '#' && card.title) {
+      const cta = document.createElement('a');
+      cta.href = card.href;
+      cta.textContent = card.title;
+      cta.target = card.target || '_self';
+      textCellContent.push(cta);
+    }
 
-    rows.push([imgEl, textCellContent]);
+    rows.push([
+      imageEl || '',
+      textCellContent
+    ]);
   });
 
-  // Create the block table
-  const block = WebImporter.DOMUtils.createTable(rows, document);
-  // Replace the original element
-  element.replaceWith(block);
+  // Create the table and replace the original element
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(table);
 }

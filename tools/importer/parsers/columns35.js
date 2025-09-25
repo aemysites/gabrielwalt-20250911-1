@@ -1,25 +1,25 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the key facts items container
+  // Find the key facts block
   const itemsWrap = element.querySelector('.d-key-facts__items');
-  let columns = [];
-  if (itemsWrap) {
-    // Get all direct children that are key facts items
-    const items = Array.from(itemsWrap.children).filter(child => child.classList.contains('d-key-facts-item'));
-    columns = items.map(item => item); // Reference, do not clone
-  }
+  if (!itemsWrap) return;
+  const items = Array.from(itemsWrap.querySelectorAll('.d-key-facts-item'));
+  if (!items.length) return;
 
-  // Always use the required block header
+  // Each item becomes a column: extract the content div (preserves icons, headings, text)
+  const columns = items.map(item => {
+    const content = item.querySelector('.d-key-facts-item__content');
+    // Defensive: if missing, fallback to empty cell
+    return content ? content : document.createElement('div');
+  });
+
+  // Build the table
   const headerRow = ['Columns (columns35)'];
-  // The second row: one cell per column, referencing the original DOM elements
-  const contentRow = columns.length ? columns : [''];
+  const columnsRow = columns;
+  const table = WebImporter.DOMUtils.createTable([
+    headerRow,
+    columnsRow,
+  ], document);
 
-  // Compose the table rows
-  const tableRows = [headerRow, contentRow];
-
-  // Create the block table
-  const table = WebImporter.DOMUtils.createTable(tableRows, document);
-
-  // Replace the original element with the block table
   element.replaceWith(table);
 }

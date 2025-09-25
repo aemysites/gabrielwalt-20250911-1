@@ -1,67 +1,74 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to extract card info from a card root element
-  function extractCard(card) {
-    // Find the image (always in <picture> inside .d-base-card__header)
-    let imgEl = null;
-    const header = card.querySelector('.d-base-card__header picture');
-    if (header) {
-      imgEl = header.querySelector('img');
+  // Helper to extract card info from each .d-teaser-boxes-stack__item
+  function extractCard(cardEl) {
+    // Find image
+    let img = null;
+    const imgEl = cardEl.querySelector('img');
+    if (imgEl) {
+      img = imgEl.cloneNode(true);
     }
-
-    // Find the title (inside .d-base-card__title)
-    let titleEl = null;
-    const titleWrap = card.querySelector('.d-base-card__title');
-    if (titleWrap) {
-      // The heading is usually a div with role=heading, inside .d-base-card__title
-      const heading = titleWrap.querySelector('[role="heading"]');
-      if (heading) {
-        titleEl = heading;
-      }
+    // Find title (use text, not the element itself)
+    let title = '';
+    const titleDiv = cardEl.querySelector('.d-base-card__title .d-base-heading');
+    if (titleDiv) {
+      title = titleDiv.textContent.trim();
     }
-
-    // Find the description (inside .d-base-card__content)
-    let descEl = null;
-    const content = card.querySelector('.d-base-card__content');
-    if (content) {
-      // Usually a <p> or <span> inside
-      const p = content.querySelector('p, span');
-      if (p) {
-        descEl = p;
-      }
+    // Find description (use text, not the element itself)
+    let desc = '';
+    const descP = cardEl.querySelector('.d-base-card__content p');
+    if (descP) {
+      desc = descP.textContent.trim();
     }
-
-    // Compose text cell: title (strong), then description (if present)
-    const textCell = [];
-    if (titleEl) textCell.push(titleEl);
-    if (descEl) textCell.push(descEl);
-
-    return [imgEl, textCell];
+    // Find CTA (the link itself)
+    let cta = null;
+    const link = cardEl.closest('a');
+    if (link && link.href && link.getAttribute('aria-label')) {
+      cta = document.createElement('a');
+      cta.href = link.href;
+      cta.textContent = link.getAttribute('aria-label');
+    }
+    // Compose text cell as a fragment
+    const frag = document.createDocumentFragment();
+    if (title) {
+      const h3 = document.createElement('h3');
+      h3.textContent = title;
+      frag.appendChild(h3);
+    }
+    if (desc) {
+      const p = document.createElement('p');
+      p.textContent = desc;
+      frag.appendChild(p);
+    }
+    if (cta) {
+      frag.appendChild(cta);
+    }
+    // Compose image cell
+    let imageCell = img || '';
+    return [imageCell, frag];
   }
 
-  // Get all card items (direct children with .d-teaser-boxes-stack__item)
-  const cards = Array.from(element.querySelectorAll(':scope > .d-teaser-boxes-stack__item'));
+  // Get all card items
+  const cardItems = Array.from(element.querySelectorAll(':scope > .d-teaser-boxes-stack__item'));
 
   // Build table rows
+  const rows = [];
+  // Header row
   const headerRow = ['Cards (cards1)'];
-  const rows = [headerRow];
-
-  cards.forEach(cardItem => {
-    // The card content is inside an <a> (the first child)
-    const link = cardItem.querySelector('a');
-    if (!link) return; // Defensive: skip if no link
-    // The card visual is inside .d-base-card
-    const card = link.querySelector('.d-base-card');
-    if (!card) return;
-    const [imgEl, textCell] = extractCard(card);
-    // Only add if both image and text are present
-    if (imgEl && textCell.length) {
-      rows.push([imgEl, textCell]);
+  rows.push(headerRow);
+  // Card rows
+  cardItems.forEach(item => {
+    let cardContent = item;
+    if (item.querySelector('.d-teaser-box-wrapper')) {
+      cardContent = item.querySelector('.d-teaser-box-wrapper');
+    }
+    if (cardContent) {
+      rows.push(extractCard(cardContent));
     }
   });
 
-  // Create the table block
-  const table = WebImporter.DOMUtils.createTable(rows, document);
+  // Create the block table
+  const block = WebImporter.DOMUtils.createTable(rows, document);
   // Replace the original element
-  element.replaceWith(table);
+  element.replaceWith(block);
 }
